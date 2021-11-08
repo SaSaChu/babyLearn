@@ -1,0 +1,11 @@
+@import "Ginkgo";
+@import "color";
+
+
+input, textarea {
+  border:0 none;
+  outline: 0;
+  background-color: transparent;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari 和 Chrome */
+}

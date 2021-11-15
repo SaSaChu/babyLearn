@@ -16,3 +16,44 @@ button {
   background-color: transparent;
 }
 
+.btnRed {
+  display: inline-block;
+  width: 115px;
+  padding: 8px  0;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: white;
+  @include border-radius(10px);
+  background: #fff8d9;
+  background: -moz-linear-gradient(top, #ff6b32 14%, #cb0000 85%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff6b32 14%, #cb0000 85%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff6b32 14%,#cb0000 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    background: -moz-linear-gradient(top, #cb0000 14%, #ff6b32 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cb0000 14%, #ff6b32 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cb0000 14%,#ff6b32 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+
+.btnBlue {
+  display: inline-block;
+  width: 115px;
+  padding: 8px 0;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: white;
+  @include border-radius(10px);
+  background: #fff8d9;
+  background: -moz-linear-gradient(top, #47c0ee 14%, #005fd4 85%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #47c0ee 14%, #005fd4 85%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #47c0ee 14%, #005fd4 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    background: -moz-linear-gradient(top, #005fd4 14%, #47c0ee 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #005fd4 14%, #47c0ee 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #005fd4 14%, #47c0ee 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}

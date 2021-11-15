@@ -1,27 +1,35 @@
 @import "Ginkgo";
 @import "color";
 
-// header
-.logo, .header_icon {
+.mob_open {
+  display: none !important;
+  @include range-width(0, 450px) {
+    display: inline-block !important;
+  }
+}
+
+.mob_close {
+  display: inline-block !important;
+  @include range-width(0, 450px) {
+    display: none !important;
+  }
+}
+
+
+.loginLogo {
   display: inline-block;
   width: 100%;
+  max-width: 350px;
 }
 
-.logo {
-  max-width: 132px;
-  margin-right: 5px;
-
-  @include range-width(0, 450px) {
-    max-width: 85px;
-  }
+.loginImg {
+  display: inline-block;
+  width: 100%;
+  max-width: 190px;
 }
 
-.header_icon {
-  max-width: 30px;
-  padding-top: 13px;
-  margin-right: 5px;
-
-  @include range-width(0, 450px) {
-    padding-top: 5px;
-  }
+.loginImg_m {
+  display: inline-block;
+  width: 100%;
+  max-width: 280px;
 }

@@ -1,1 +1,12 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+.m-d-80 { margin-bottom: 80px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m-d-80 { margin-bottom: 25px; } }
+
+.m-e-10 { margin-right: 10px; }
+
+.m-s-10 { margin-left: 10px; }
+
+.p-d-10 { padding-bottom: 10px; }
+
+.p-y-10 { padding: 10px 0; }

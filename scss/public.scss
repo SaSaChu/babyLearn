@@ -17,10 +17,17 @@ body {
   color: black;
   text-align: center;
   font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-
-  background-color: yellow;
 }
 
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+// header
 header {
   display: flex;
   justify-content: center;
@@ -84,3 +91,144 @@ header {
     display: none;
   }
 }
+
+.logo, .header_icon {
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 132px;
+  margin-right: 5px;
+
+  @include range-width(0, 450px) {
+    max-width: 85px;
+  }
+}
+
+.header_icon {
+  max-width: 30px;
+  padding-top: 13px;
+  margin-right: 5px;
+
+  @include range-width(0, 450px) {
+    padding-top: 5px;
+  }
+}
+
+
+.allBoxs {
+  display: inline-block;
+  width: 100%;
+  @include clearfix();
+}
+
+.boxs70 {
+  width: 70%;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.box650 {
+  display: inline-block;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+.loginboxs {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  @include clearfix();
+  @include border-radius(20px);
+  background: #fff8d9;
+  background: -moz-linear-gradient(top, #ffe75d 14%, #fff8d9 85%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffe75d 14%, #fff8d9 85%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffe75d 14%, #fff8d9 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  .loginbox_bg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    @include border-radius(20px);
+    background: #fff8d9;
+    background: -moz-linear-gradient(top, #fff8d9 14%, #ffe75d 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff8d9 14%, #ffe75d 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff8d9 14%,#ffe75d 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 40px;
+
+    @include range-width(0, 450px) {
+      padding: 20px;
+    }
+  }
+}
+
+.loginLeft {
+  display: inline-block;
+  width: calc(100% - 190px);
+  float: left;
+  padding-right: 20px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.loginRight {
+  display: inline-block;
+  width: 190px;
+  float: right;
+}
+
+
+footer {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  font-size: 1rem;
+
+  background-color: $color_LBlue;
+  color: white;
+
+  @include range-width(0, 450px) {
+    margin-top: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

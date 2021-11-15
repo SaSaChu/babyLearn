@@ -1,2 +1,26 @@
 @import "Ginkgo";
 
+// login logo use
+.m-d-80 {
+	margin-bottom: 80px;
+
+	@include range-width(0, 450px) {
+		margin-bottom: 25px;
+	}
+}
+
+.m-e-10 {
+	margin-right: 10px;
+}
+
+.m-s-10 {
+	margin-left: 10px;
+}
+
+.p-d-10 {
+	padding-bottom: 10px;
+}
+
+.p-y-10 {
+	padding: 10px 0;
+}

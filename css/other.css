@@ -9,7 +9,10 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_close { display: none !important; } }
 
 .loginLogo { display: inline-block; width: 100%; max-width: 350px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .loginLogo { max-width: 240px; } }
 
 .loginImg { display: inline-block; width: 100%; max-width: 190px; }
 
 .loginImg_m { display: inline-block; width: 100%; max-width: 280px; }
+
+.iconOk { display: inline-block; width: 100%; max-width: 60px; line-height: 40px; }

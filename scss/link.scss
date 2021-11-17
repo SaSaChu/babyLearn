@@ -16,15 +16,46 @@ button {
   background-color: transparent;
 }
 
-.btnRed {
+.btnRed, .btnBlue, .btnOrange {
   display: inline-block;
+  cursor: pointer;
   width: 115px;
-  padding: 8px  0;
+  padding: 8px 0;
   font-size: 1.4rem;
   font-weight: bolder;
   color: white;
   @include border-radius(10px);
-  background: #fff8d9;
+  text-align: center;
+
+  // 使用：手機版menu按鈕
+  &.m_color_btn {
+    @include range-width(0, 450px) {
+      font-size: 1.15rem;
+      padding: 5px 0;
+      width: 80px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  &.wNotFull {
+    width: auto;
+    padding: 8px;
+    margin-right: 15px;
+  }
+
+  &.setUse {
+    width: auto;
+    padding: 5px 12px;
+    font-size: 1.2rem;
+    @include border-radius(50px);
+    font-weight: normal;
+    margin-bottom: 5px;
+  }
+}
+
+.btnRed {
+  background: #ff6b32;
   background: -moz-linear-gradient(top, #ff6b32 14%, #cb0000 85%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ff6b32 14%, #cb0000 85%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ff6b32 14%,#cb0000 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -38,14 +69,7 @@ button {
 }
 
 .btnBlue {
-  display: inline-block;
-  width: 115px;
-  padding: 8px 0;
-  font-size: 1.4rem;
-  font-weight: bolder;
-  color: white;
-  @include border-radius(10px);
-  background: #fff8d9;
+  background: #47c0ee;
   background: -moz-linear-gradient(top, #47c0ee 14%, #005fd4 85%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #47c0ee 14%, #005fd4 85%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #47c0ee 14%, #005fd4 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -57,3 +81,20 @@ button {
     background: linear-gradient(to bottom, #005fd4 14%, #47c0ee 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 }
+
+.btnOrange {
+  background: #f0ba22;
+  background: -moz-linear-gradient(top, #f0ba22 14%, #ec7300 85%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f0ba22 14%, #ec7300 85%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f0ba22 14%, #ec7300 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    background: -moz-linear-gradient(top, #ec7300 14%, #f0ba22 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ec7300 14%, #f0ba22 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ec7300 14%, #f0ba22 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+
+
+

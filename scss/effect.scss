@@ -1,22 +1,190 @@
 @import "Ginkgo";
+@import "color";
 
-// .border-image-clip-path {
-//   position: relative;
-//   width: 100%;
-//   height: 240px;
-//   border: 5px solid;
-//   border-image: linear-gradient(180deg, #ffe75d, #fff8d9) 1;
-//   clip-path: inset(5px round 30px);
-// }
+// 手機Menu
+.m_header_r {
+  display: none;
 
-// .border-image-clip-path2 {
-//   position: relative;
-//   width: 100%;
-//   height: 250px;
-//   clip-path: inset(20px round 20px);
+  @include range-width(0, 450px) {
+    display: inline-block;
+    width: 40px;
+    float: right;
+    height: 40px; 
+    background-color: rgba(0, 99, 170, 1.00);
+    color: white;
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+}
 
-//   background: #fff8d9;
-//   background: -moz-linear-gradient(top, #fff8d9 14%, #ffe75d 85%); /* FF3.6-15 */
-//   background: -webkit-linear-gradient(top, #fff8d9 14%,#ffe75d 85%); /* Chrome10-25,Safari5.1-6 */
-//   background: linear-gradient(to bottom, #fff8d9 14%,#ffe75d 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//   }
+.m_menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: -100%;
+  @include transition(all .3s);
+  
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+
+  &.menu_open {
+    right: 0;
+  }
+
+  .menuBox {
+    display: inline-block;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    float: right;
+    position: relative;
+  }
+
+  .menuClose {
+    display: inline-block;
+    width: 20%;
+    max-width: 30px;
+    float: right;
+    margin: 10px 10px 0 0;
+  }
+}
+
+.m_header {
+  display: inline-block;
+  width: 100%;
+  padding: 15px; 
+  background-color: rgba(249, 240, 192, 1.00);
+}
+
+.m_header_img {
+  display: inline-block;
+  width: 100%;
+  max-width: 65px;
+  @include border-radius(55px);
+  border: 1px solid rgba(106, 67, 32, 1.00); // 咖啡色
+  overflow: hidden;
+  background-color: white;
+  float: left;
+  margin-right: 15px;
+
+  &.nb_h_i {
+    border: 0;
+    background-color: transparent;
+  } 
+}
+
+.m_headerBoxsR {
+  display: inline-block;
+  width: calc(100% - 80px);
+  float: left;
+}
+
+.m_center {
+  display: inline-block;
+  width: 100%;
+
+  .mLink {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid $color_Blue;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    line-height: 40px;
+    @include transition(all .3s);
+    text-align: left;
+    padding: 10px 0;
+    color: black;
+
+    &:hover, &:active {
+      color: $color_Blue;
+    }
+
+    img {
+      display: inline-block;
+      width: 55px;
+      float: left;
+    }
+  }
+}
+
+
+
+
+
+
+// 光箱
+#myModel, .model {
+  // display: inline-block;
+  display: none;
+
+  &.showModel {
+    display: flex;
+  }
+  
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(33, 33, 33, .8);
+  
+  .poupBoxs {
+	  display: inline-block;
+	  width: 100%;
+	  padding: 5px;
+	  @include clearfix();
+	  @include border-radius(20px);
+
+	  &.poupGreen {
+	  	background: #7ab534;
+		  background: -moz-linear-gradient(top, #7ab534 14%, #d7e5a7 85%); 
+		  background: -webkit-linear-gradient(top, #7ab534 14%, #d7e5a7 85%); 
+		  background: linear-gradient(to bottom, #7ab534 14%, #d7e5a7 85%);
+	  }
+
+	  &.poupRed {
+	  	background: #cc1824;
+		  background: -moz-linear-gradient(top, #cc1824 14%, #ec7e5a 85%); 
+		  background: -webkit-linear-gradient(top, #cc1824 14%, #ec7e5a 85%); 
+		  background: linear-gradient(to bottom, #cc1824 14%, #ec7e5a 85%);
+	  }
+
+	  .poupBoxs_bg {
+	    display: inline-block;
+	    width: 100%;
+	    height: 100%;
+	    @include border-radius(20px);
+	    padding: 20px;
+
+	    &.poupGreen_bg {
+		  	background: #fff8d9;
+			  background: -moz-linear-gradient(top, #ffffff 14%, #fff8dc 85%);
+			  background: -webkit-linear-gradient(top, #ffffff 14%, #fff8dc 85%); 
+			  background: linear-gradient(to bottom, #ffffff 14%, #fff8dc 85%);
+		  }
+
+	    
+
+	    @include range-width(0, 450px) {
+	      padding: 10px;
+	    }
+	  }
+	}
+
+  .t-close {
+    display: inline-block;
+    cursor: pointer;
+    // float: right;
+  }
+}

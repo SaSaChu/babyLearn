@@ -8,6 +8,14 @@ p {
   margin: 0;
 }
 
+.textAlign_L {
+  text-align: left;
+}
+
+.textAlign_R {
+  text-align: right;
+}
+
 .loginTitle {
   display: inline-block;
   width: 100%;
@@ -19,7 +27,7 @@ p {
   color: $color_LBlue;
 
   @include range-width(0, 450px) {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -46,3 +54,51 @@ p {
     margin-right: 5px;
   }
 }
+
+.notetext {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.userName {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 40px;
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+}
+
+.setTitle {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  font-family: "cwTeXYen", sans-serif;
+  font-weight: bolder;
+  color: $color_LBlue;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted $color_Blue; 
+
+  @include range-width(0, 450px) {
+    font-size: 2.4rem;
+  }
+}
+
+.text18 {
+  display: inline-block;
+  float: left;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: rgba(91, 91, 91, 1.00);
+}
+
+
+
+
+

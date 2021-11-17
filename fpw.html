@@ -40,41 +40,27 @@
 
       <div class="loginboxs">
         <div class="loginbox_bg">
-          <div class="mob_open m-d-80"><img src="img/login_img01_m.svg" class="loginImg_m"></div>
+          <div class="mob_open m-d-80"><img src="img/login_img02_m.svg" class="loginImg_m"></div>
           
           <div class="loginLeft">
-            <p class="loginTitle p-d-10">請輸入會員編號及密碼!</p>
+            <p class="loginTitle p-d-10">忘記密碼嗎？</br>請輸入會員編號及Email!</p>
             <div class="allBoxs p-y-10">
               <div class="loginName">會員編號</div>
               <input class='loginInput' type="text" placeholder="會員編號就在教材信封名條上" >
             </div>
             <div class="allBoxs p-y-10">
-              <div class="loginName">密碼</div>
-              <input class='loginInput' type="text" placeholder="首次登入，密碼請見學習版讀本封底" >
-            </div>
-            <div class="allBoxs p-y-10">
               <div class="loginName">電子郵件信箱</div>
-              <input class='loginInput' type="text" placeholder="忘記密碼時，補發至郵件" >
-            </div>
-            <div class="allBoxs p-y-10">
-              <div class="boxs70 floatR">
-                <input class="magic-checkbox" type="checkbox" name="layout" id="c1">
-                <label for="c1">保持登入記錄狀態</label>
-              </div>
+              <input class='loginInput' type="text" placeholder="輸入之前登入填寫之郵件信箱" >
             </div>
 
-            <div class="allBoxs p-y-10">
-              <!-- <a href='l_index.html' class="btnRed m-e-10">登入</a> -->
-
-              <!-- input輸入錯誤跳的光箱樣式 -->
-              <div class="btnRed m-e-10 showModel" data-id='1'>登入</div>
-
-              <a href='fpw.html' class="btnBlue">忘記密碼</a>
+            <div class="allBoxs p-y-10 m-t-50">
+              <div class="btnRed m-e-10 showModel" data-id='1'>送出</div>
+              <a href='login.html' class="btnOrange">回登入頁面</a>
             </div>
           </div>
 
           <div class="loginRight">
-            <img src="img/login_img01.svg" class="loginImg mob_close">
+            <img src="img/login_img02.svg" class="loginImg mob_close">
           </div>
         </div>
       </div>
@@ -85,20 +71,33 @@
       Copyright © Benesse Corporation / 巧虎
     </footer>
 
-    <!-- 光箱 -->
-    <div id="myModel" class="model">
+    <!-- 光箱・狀態一・錯誤狀態 -->
+    <!-- <div id="myModel" class="model">
       <div class='box650'>
         <div class='model_boxs box_1'>
           <div class="poupBoxs poupRed">
             <div class="poupBoxs_bg poupGreen_bg">
-              <div class="allBoxs"><img src="img/icon_close.svg" class="iconOk"></div>
+              <div class="allBoxs"><img src="img/icon_close.svg" class="iconOk"></div> -->
               <!-- 狀態一 -->
-              <p class="notetext m-y-20">您輸入的會員編號錯誤。</p>
+              <!-- <p class="notetext m-y-20">您的會員編號輸入錯誤。</p> -->
               <!-- 狀態二 -->
-              <!-- <p class="notetext m-y-20">您輸入的密碼錯誤。</p> -->
-              <!-- 狀態三 -->
-              <!-- <p class="notetext m-y-20">您輸入的電子郵件信箱格式錯誤。</p> -->
-              <div class='t-close btnRed'>確 定</div>
+              <!-- <p class="notetext m-y-20">您輸入的電子郵件信箱與之前登入時留存不符。</p> -->
+              <!-- <div class='t-close btnRed'>確 定</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- 光箱・狀態二・通過狀態 -->
+    <div id="myModel" class="model">
+      <div class='box650'>
+        <div class='model_boxs box_1'>
+          <div class="poupBoxs poupGreen">
+            <div class="poupBoxs_bg poupGreen_bg">
+              <div class="allBoxs"><img src="img/icon_ok.svg" class="iconOk"></div>
+              <p class="notetext m-y-20">請再到您輸入的電子郵件信箱收信</br>完成重設密碼的流程</p>
+              <div class='t-close btnBlue'>完 成</div>
             </div>
           </div>
         </div>

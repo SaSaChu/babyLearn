@@ -32,51 +32,51 @@
         <a href="https://app.benesse.com.tw/act/201601_member/" target='_blank'><img class='header_icon' src="img/icon_app.svg"></a>
       </div>
 
-      <div class='header_r'></div>
+      <div class='header_r'>
+        <p class="userName">王小明，您好！</p>
+        <div class="userPic"><img src="img/boy.svg"></div>
+        <a href="setting.html" class="btnOrange wNotFull">設定</a>
+        <a href="record.html" class="btnOrange">學習紀錄</a>
+      </div>
+
+      <!-- 手機Menu・觸發 -->
+      <div class='m_header_r icon-navicon'></div>
     </header>
 
-    <div class="box650">
-      <div class="loginLogo m-d-80"><img src="img/login_logo.svg"></div>
-
-      <div class="loginboxs">
-        <div class="loginbox_bg">
-          <div class="mob_open m-d-80"><img src="img/login_img01_m.svg" class="loginImg_m"></div>
-          
-          <div class="loginLeft">
-            <p class="loginTitle p-d-10">請輸入會員編號及密碼!</p>
-            <div class="allBoxs p-y-10">
-              <div class="loginName">會員編號</div>
-              <input class='loginInput' type="text" placeholder="會員編號就在教材信封名條上" >
+    <!-- 手機Menu・內容 -->
+    <div class='m_menu'>
+      <div class='menuBox'>
+        <!-- menu header -->
+        <div class='m_header'>
+          <div class="allBoxs textAlign_L">
+            <!-- <img class='m_header_img nb_h_i' src="img/m-logo.svg"> -->
+            <img class='m_header_img' src="img/boy.svg">
+            <div class="m_headerBoxsR">
+              <p class="userName">王小明，您好！</p>
+              <a href="setting.html" class="btnOrange m_color_btn m-t-10">設定</a>
+              <a href="record.html" class="btnOrange m_color_btn m-t-10">學習紀錄</a>
             </div>
-            <div class="allBoxs p-y-10">
-              <div class="loginName">密碼</div>
-              <input class='loginInput' type="text" placeholder="首次登入，密碼請見學習版讀本封底" >
-            </div>
-            <div class="allBoxs p-y-10">
-              <div class="loginName">電子郵件信箱</div>
-              <input class='loginInput' type="text" placeholder="忘記密碼時，補發至郵件" >
-            </div>
-            <div class="allBoxs p-y-10">
-              <div class="boxs70 floatR">
-                <input class="magic-checkbox" type="checkbox" name="layout" id="c1">
-                <label for="c1">保持登入記錄狀態</label>
-              </div>
-            </div>
-
-            <div class="allBoxs p-y-10">
-              <!-- <a href='l_index.html' class="btnRed m-e-10">登入</a> -->
-
-              <!-- input輸入錯誤跳的光箱樣式 -->
-              <div class="btnRed m-e-10 showModel" data-id='1'>登入</div>
-
-              <a href='fpw.html' class="btnBlue">忘記密碼</a>
-            </div>
-          </div>
-
-          <div class="loginRight">
-            <img src="img/login_img01.svg" class="loginImg mob_close">
           </div>
         </div>
+
+        <div class="m_center">
+          <a href="math.html" class="mLink"><img src="img/m-menu01.svg">數學魔法列車</a>
+          <a href="language.html" class="mLink"><img src="img/m-menu02.svg">語文夢幻高塔</a>
+          <a href="think.html" class="mLink"><img src="img/m-menu03.svg">思考力冒險迷宮</a>
+          <a href="video.html" class="mLink"><img src="img/m-menu04.svg">看影片輕鬆學</a>
+          <a href="activity.html" class="mLink"><img src="img/m-menu05.svg">活動區</a>
+          <a href="notmember.html" class="mLink"><img src="img/m-menu06.svg">非會員體驗區</a>
+        </div>
+      </div>
+      <div class='menuClose'><img src="img/icon_close.svg"></div>
+    </div>
+
+
+    <div class="box880">
+      <div class="loginLogo m-d-80"><img src="img/login_logo.svg"></div>
+
+      <div class="centBoxsWhite">
+        dddd
       </div>
     </div>
 
@@ -87,17 +87,17 @@
 
     <!-- 光箱 -->
     <div id="myModel" class="model">
-      <div class='box650'>
+      <div class='box500'>
         <div class='model_boxs box_1'>
           <div class="poupBoxs poupRed">
             <div class="poupBoxs_bg poupGreen_bg">
               <div class="allBoxs"><img src="img/icon_close.svg" class="iconOk"></div>
               <!-- 狀態一 -->
-              <p class="notetext m-y-20">您輸入的會員編號錯誤。</p>
+              <p class="notetext m-y-20">密碼輸入錯誤！</br>請再檢查您輸入密碼是否正確。</p>
               <!-- 狀態二 -->
-              <!-- <p class="notetext m-y-20">您輸入的密碼錯誤。</p> -->
-              <!-- 狀態三 -->
-              <!-- <p class="notetext m-y-20">您輸入的電子郵件信箱格式錯誤。</p> -->
+              <!-- <p class="notetext m-y-20">新電子郵件信箱格式不符！</br>請再檢查您輸入格式是否正確。</p> -->
+              <!-- 狀態二 -->
+              <!-- <p class="notetext m-y-20">確認新電子郵件信箱與新電子郵件信箱不符！</br>請再檢查您的確認新電子郵件信箱是否正確。 </p> -->
               <div class='t-close btnRed'>確 定</div>
             </div>
           </div>

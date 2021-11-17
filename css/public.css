@@ -40,8 +40,18 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 .boxs70 { width: 70%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs70 { width: 100%; } }
 
+.box880 { display: inline-block; width: 100%; max-width: 880px; margin: 0 auto; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box880 { width: 100%; padding: 0 25px; } }
+
 .box650 { display: inline-block; width: 100%; max-width: 750px; margin: 0 auto; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box650 { width: 100%; padding: 0 25px; } }
+
+.box500 { display: inline-block; width: 100%; max-width: 500px; margin: 0 auto; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box500 { width: 100%; padding: 0 25px; } }
+
+.centBoxsWhite { display: inline-block; width: 100%; padding: 5px; *zoom: 1; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background-color: white; padding: 40px; }
+.centBoxsWhite:after { display: table; content: ""; line-height: 0; clear: both; }
+@media screen and (max-width: 449px) and (min-width: 0) { .centBoxsWhite { padding: 25px; } }
 
 .loginboxs { display: inline-block; width: 100%; padding: 5px; *zoom: 1; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; background: #fff8d9; background: -moz-linear-gradient(top, #ffe75d 14%, #fff8d9 85%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #ffe75d 14%, #fff8d9 85%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ffe75d 14%, #fff8d9 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 .loginboxs:after { display: table; content: ""; line-height: 0; clear: both; }
@@ -55,3 +65,28 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 
 footer { display: inline-block; width: 100%; padding: 20px; margin-top: 80px; font-size: 1rem; background-color: #4294ff; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { footer { margin-top: 25px; } }
+
+.userPic { display: inline-block; width: 40px; height: 40px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; border: 1px solid #6a4320; overflow: hidden; margin: 0 15px; }
+
+.setLeft, .setRight { display: inline-block; float: left; }
+.setLeft.set_no_f, .setRight.set_no_f { float: none; }
+.setLeft.setFull, .setRight.setFull { width: 100% !important; }
+
+.setLeft { display: inline-block; width: 170px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .setLeft { width: 100%; } }
+.setLeft .setUserBox { display: inline-block; width: 100%; position: relative; }
+@media screen and (max-width: 449px) and (min-width: 0) { .setLeft .setUserBox { width: 61%; } }
+.setLeft .setUserBox .iconCam { display: inline-block; position: absolute; width: 45px; right: 10px; bottom: -14px; }
+.setLeft .setUserBox .setUser { display: inline-block; width: 100%; max-width: 135px; overflow: hidden; background-color: white; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; }
+
+.setRight { display: inline-block; width: calc(100% - 170px); }
+@media screen and (max-width: 449px) and (min-width: 0) { .setRight { width: 100%; } }
+
+.s_box25, .s_box75 { display: inline-block; float: left; text-align: left; }
+
+.s_box25 { width: 25%; padding-left: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .s_box25 { width: 100%; padding-left: 0; padding-bottom: 10px; } }
+
+.s_box75 { width: 75%; border-bottom: 1px solid #5b5b5b; }
+@media screen and (max-width: 449px) and (min-width: 0) { .s_box75 { width: 100%; } }
+.s_box75.s_nob { border-bottom: 0; }

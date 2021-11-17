@@ -131,6 +131,18 @@ header {
   }
 }
 
+.box880 {
+  display: inline-block;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
 .box650 {
   display: inline-block;
   width: 100%;
@@ -140,6 +152,32 @@ header {
   @include range-width(0, 450px) {
     width: 100%;
     padding: 0 25px;
+  }
+}
+
+.box500 {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+.centBoxsWhite {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  @include clearfix();
+  @include border-radius(20px);
+  background-color: white;
+  padding: 40px;
+
+  @include range-width(0, 450px) {
+    padding: 25px;
   }
 }
 
@@ -204,6 +242,107 @@ footer {
     margin-top: 25px;
   }
 }
+
+.userPic {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  @include border-radius(30px);
+  border: 1px solid rgba(106, 67, 32, 1.00); // 咖啡色
+  overflow: hidden;
+  margin: 0 15px;
+}
+
+.setLeft, .setRight {
+  display: inline-block;
+  float: left;
+
+  &.set_no_f {
+    float: none;
+  }
+
+  &.setFull {
+    width: 100% !important;
+  }
+}
+
+.setLeft {
+  display: inline-block;
+  width: 170px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+
+  .setUserBox {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    @include range-width(0, 450px) {
+      width: 61%;
+    }
+
+    .iconCam {
+      display: inline-block;
+      position: absolute;
+      width: 45px;
+      right: 10px;
+      bottom: -14px;
+    }
+
+    .setUser {
+      display: inline-block;
+      width: 100%;
+      max-width: 135px;
+      overflow: hidden;
+      background-color: white;
+      @include border-radius(100px);
+    }
+  }
+}
+
+.setRight {
+  display: inline-block;
+  width: calc(100% - 170px);
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.s_box25, .s_box75 {
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+
+.s_box25 {
+  width: 25%;
+  padding-left: 20px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.s_box75 {
+  width: 75%;
+  border-bottom: 1px solid rgba(91, 91, 91, 1.00);
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+
+  &.s_nob {
+    border-bottom: 0;
+  }
+}
+
+
+
 
 
 

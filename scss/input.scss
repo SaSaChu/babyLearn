@@ -24,6 +24,27 @@ input, textarea {
   }
 }
 
+.setInput {
+  display: inline-block;
+  width: 80%;
+  background-color: transparent;
+  padding: 0 0 5px 10px;
+  font-size: 1.5rem;
+
+  @include range-width(0, 450px) {
+    padding: 0 0 5px 0;
+    width: 75%;
+  }
+}
+
+.setInput_w {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
 @keyframes hover-color {
   from {
     border-color: #c0c0c0;
@@ -55,6 +76,7 @@ input, textarea {
   color: $font_grey;
 
   @include range-width(0, 450px) {
+    display: inline-block;
     text-align: center;
   }
 }

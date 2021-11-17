@@ -8,6 +8,11 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .loginInput { display: inline-block; width: 70%; background-color: white !important; border: 2px solid #60d0fb; padding: 8px 15px; font-size: 1.2rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .loginInput { width: 100%; } }
 
+.setInput { display: inline-block; width: 80%; background-color: transparent; padding: 0 0 5px 10px; font-size: 1.5rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .setInput { padding: 0 0 5px 0; width: 75%; } }
+
+.setInput_w { display: inline-block; width: 100%; background-color: white; padding: 10px; font-size: 1.4rem; }
+
 @keyframes hover-color { from { border-color: #c0c0c0; }
   to { border-color: #3e97eb; } }
 .magic-radio, .magic-checkbox { position: absolute; display: none; }
@@ -15,7 +20,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .magic-radio[disabled], .magic-checkbox[disabled] { cursor: not-allowed; }
 
 .magic-radio + label, .magic-checkbox + label { position: relative; display: block; padding-left: 30px; cursor: pointer; vertical-align: middle; font-size: 1.4rem; font-weight: bolder; text-align: left; color: #5b5b5b; }
-@media screen and (max-width: 449px) and (min-width: 0) { .magic-radio + label, .magic-checkbox + label { text-align: center; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .magic-radio + label, .magic-checkbox + label { display: inline-block; text-align: center; } }
 
 .magic-radio + label:hover:before, .magic-checkbox + label:hover:before { animation-duration: 0.4s; animation-fill-mode: both; animation-name: hover-color; }
 

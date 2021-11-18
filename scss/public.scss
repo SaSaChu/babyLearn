@@ -430,7 +430,45 @@ footer {
   }
 }
 
+.topBar {
+  display: inline-block;
+  width: 100%;
+  min-height: 185px;
+  padding: 0 50px;
+  position: relative;
 
+  .topL, .topR {
+    display: inline-block;
+    float: left;
+    position: absolute;
+  }
+
+  .topL {
+    width: 50%;
+    top: 0;
+    left: 50px;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 780px;
+      float: left;
+    }
+  }
+
+  .topR {
+    width: 50%;
+    top: 20px;
+    right: 50px;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 800px;
+      float: right;
+    }
+  }
+}
 
 
 

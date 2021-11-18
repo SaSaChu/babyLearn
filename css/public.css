@@ -3,6 +3,8 @@
 
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_paperBlue { background-image: linear-gradient(to bottom, #407cff 14%, #6ee5ff 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
 .bg_LYellow { background-color: #fff6d7; }
 
 .bg_LPink { background-color: #fff3f6; }
@@ -121,3 +123,10 @@ footer { display: inline-block; width: 100%; padding: 20px; margin-top: 80px; fo
 
 .box20 { display: inline-block; width: 20%; float: left; padding: 20px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box20 { width: 100%; } }
+
+.topBar { display: inline-block; width: 100%; min-height: 185px; padding: 0 50px; position: relative; }
+.topBar .topL, .topBar .topR { display: inline-block; float: left; position: absolute; }
+.topBar .topL { width: 50%; top: 0; left: 50px; }
+.topBar .topL img { display: inline-block; width: 100%; max-width: 780px; float: left; }
+.topBar .topR { width: 50%; top: 20px; right: 50px; }
+.topBar .topR img { display: inline-block; width: 100%; max-width: 800px; float: right; }

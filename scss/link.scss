@@ -44,6 +44,20 @@ button {
     margin-right: 15px;
   }
 
+  &.wNotFull2 {
+    width: auto;
+    padding: 8px;
+    margin-left: 15px;
+
+    &:before {
+      display: inline-block;
+      content: '\f0c9';
+      font-family: icon;
+      margin-top: 4px;
+      margin-right: 5px;
+    }
+  }
+
   &.setUse {
     width: auto;
     padding: 5px 12px;
@@ -118,6 +132,39 @@ button {
 }
 
 
+.videoLink {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+}
+
+.taglink {
+  display: inline-block;
+  color: rgba(48, 56, 65, .6);
+  font-size: 1.2rem;
+  float: left;
+
+  &:after {
+    display: inline-block;
+    content: '\f105';
+    font-family: icon;
+    margin: 3px 5px 0 5px;
+  }
+
+  &:hover, &.tagAc {
+    color: $color_orange;
+
+    &:after {
+      color: rgba(48, 56, 65, .6);
+    }
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
 
 
 

@@ -2,6 +2,10 @@
 
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_LYellow { background-color: #fff6d7; }
+
+.bg_LPink { background-color: #fff3f6; }
+
 .mob_open { display: none !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_open { display: inline-block !important; } }
 
@@ -16,3 +20,29 @@
 .loginImg_m { display: inline-block; width: 100%; max-width: 280px; }
 
 .iconOk { display: inline-block; width: 100%; max-width: 60px; line-height: 40px; }
+
+.borderB_Blue, .borderB_Pink, .borderB_Orange { display: inline-block; width: 100%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .borderB_Blue.m_bB_none, .borderB_Pink.m_bB_none, .borderB_Orange.m_bB_none { border-bottom: 0; } }
+
+.borderB_Blue { border-bottom: 2px solid #419be3; }
+.borderB_Blue.m_bB_show { width: auto; border-bottom: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .borderB_Blue.m_bB_show { width: 100%; border-bottom: 2px solid #419be3; } }
+
+.borderB_Pink { border-bottom: 2px solid #ff6fa2; }
+.borderB_Pink.m_bB_show { width: auto; border-bottom: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .borderB_Pink.m_bB_show { width: 100%; border-bottom: 2px solid #ff6fa2; } }
+
+.borderB_Orange { border-bottom: 2px solid #ea7115; }
+.borderB_Orange.m_bB_show { width: auto; border-bottom: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .borderB_Orange.m_bB_show { width: 100%; border-bottom: 2px solid #ea7115; } }
+
+@media screen and (max-width: 449px) and (min-width: 0) { .m_borderG { display: inline-block; width: 100%; border-bottom: 1px dotted rgba(91, 91, 91, 0.5); } }
+
+.rImg { display: inline-block; width: 100%; max-width: 230px; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .rImg { max-width: 200px; float: none; } }
+
+.rVideoImg { display: inline-block; width: 100%; max-width: 42px; float: left; margin-right: 10px; }
+
+.goodImg { display: inline-block; width: 100%; max-width: 30px; margin-right: 10px; float: left; }
+.goodImg.no_gi { margin-right: 0; float: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .goodImg.no_gi { max-width: 25px; } }

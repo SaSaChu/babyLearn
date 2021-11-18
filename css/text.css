@@ -1,7 +1,12 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
+.bg_LYellow { background-color: #fff6d7; }
+
+.bg_LPink { background-color: #fff3f6; }
 
 p { padding: 0; margin: 0; }
 
@@ -25,3 +30,22 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .setTitle { font-size: 2.4rem; } }
 
 .text18 { display: inline-block; float: left; font-size: 1.4rem; font-weight: bolder; color: #5b5b5b; }
+
+.text24 { display: inline-block; float: left; font-size: 1.8rem; font-weight: bolder; color: #5b5b5b; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text24 { padding-bottom: 20px; } }
+
+.timeTotal { display: inline-block; float: right; font-weight: bolder; font-size: 1.6rem; color: #f6881c; }
+.timeTotal:before { display: inline-block; content: '本月學習時數：'; }
+.timeTotal:after { display: inline-block; content: '分鐘'; }
+
+.month { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #f6881c; float: left; margin: 0 10px; }
+.month:after { display: inline-block; content: '月'; }
+
+.rVideoText { display: inline-block; font-size: 1.5rem; font-weight: bolder; color: #f6881c; float: left; line-height: 35px; }
+
+.number { display: inline-block; width: 30px; height: 30px; background-color: #e64b14; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; color: white; font-weight: bolder; font-size: 1.4rem; line-height: 30px; margin-bottom: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .number { width: 25px; height: 25px; font-size: 1.2rem; line-height: 25px; } }
+
+.gameTatle { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #e64b14; margin-bottom: 10px; }
+.gameTatle:after { display: inline-block; content: '分'; }
+@media screen and (max-width: 449px) and (min-width: 0) { .gameTatle { float: left; } }

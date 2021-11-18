@@ -3,6 +3,10 @@
 
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_LYellow { background-color: #fff6d7; }
+
+.bg_LPink { background-color: #fff3f6; }
+
 html { font-size: 13px; }
 
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
@@ -10,6 +14,8 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .floatL { float: left; }
 
 .floatR { float: right; }
+
+@media screen and (max-width: 449px) and (min-width: 0) { .m_floatNone { float: none !important; } }
 
 header { display: flex; justify-content: center; align-items: center; width: 100%; height: 65px; background-color: white; padding: 0 50px; }
 header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1px 3px 5px 4px rgba(51, 51, 51, 0.8); -webkit-box-shadow: 1px 3px 5px 4px rgba(51, 51, 51, 0.8); -moz-box-shadow: 1px 3px 5px 4px rgba(51, 51, 51, 0.8); -o-box-shadow: 1px 3px 5px 4px rgba(51, 51, 51, 0.8); }
@@ -90,3 +96,28 @@ footer { display: inline-block; width: 100%; padding: 20px; margin-top: 80px; fo
 .s_box75 { width: 75%; border-bottom: 1px solid #5b5b5b; }
 @media screen and (max-width: 449px) and (min-width: 0) { .s_box75 { width: 100%; } }
 .s_box75.s_nob { border-bottom: 0; }
+
+.recordTitleBoxs { display: inline-block; width: 100%; border-bottom: 2px dotted #4294ff; padding-bottom: 15px; }
+
+.monthBoxs { display: inline-block; }
+
+.recordL, .recordR { display: inline-block; float: left; }
+
+.recordL { width: 230px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .recordL { width: 100%; padding-bottom: 10px; } }
+
+.recordR { width: calc(100% - 230px); }
+@media screen and (max-width: 449px) and (min-width: 0) { .recordR { width: 100%; padding-top: 20px; } }
+
+.boxs3 { display: inline-block; width: calc(100% / 3); float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .boxs3 { width: 100%; } }
+
+.m_box50 { display: inline-block; width: 100%; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_box50 { width: 50%; } }
+
+.box80 { display: inline-block; width: 80%; float: left; padding: 25px 0; }
+.box80 .blank10 { display: inline-block; width: calc(100% / 10); float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box80 { width: 100%; padding: 0; } }
+
+.box20 { display: inline-block; width: 20%; float: left; padding: 20px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box20 { width: 100%; } }

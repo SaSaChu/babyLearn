@@ -3,6 +3,10 @@
 
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_LYellow { background-color: #fff6d7; }
+
+.bg_LPink { background-color: #fff3f6; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .loginInput { display: inline-block; width: 70%; background-color: white !important; border: 2px solid #60d0fb; padding: 8px 15px; font-size: 1.2rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
@@ -20,7 +24,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .magic-radio[disabled], .magic-checkbox[disabled] { cursor: not-allowed; }
 
 .magic-radio + label, .magic-checkbox + label { position: relative; display: block; padding-left: 30px; cursor: pointer; vertical-align: middle; font-size: 1.4rem; font-weight: bolder; text-align: left; color: #5b5b5b; }
-@media screen and (max-width: 449px) and (min-width: 0) { .magic-radio + label, .magic-checkbox + label { display: inline-block; text-align: center; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .magic-radio + label, .magic-checkbox + label { display: inline-block; text-align: center; font-size: 1.3rem; } }
 
 .magic-radio + label:hover:before, .magic-checkbox + label:hover:before { animation-duration: 0.4s; animation-fill-mode: both; animation-name: hover-color; }
 

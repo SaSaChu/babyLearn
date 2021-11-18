@@ -78,6 +78,7 @@ input, textarea {
   @include range-width(0, 450px) {
     display: inline-block;
     text-align: center;
+    font-size: 1.3rem;
   }
 }
 

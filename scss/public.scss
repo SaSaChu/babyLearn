@@ -27,6 +27,12 @@ body {
   float: right;
 }
 
+.m_floatNone {
+  @include range-width(0, 450px) {
+    float: none !important;
+  }
+}
+
 // header
 header {
   display: flex;
@@ -341,17 +347,88 @@ footer {
   }
 }
 
+.recordTitleBoxs {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px dotted $color_LBlue;
+  padding-bottom: 15px; 
+}
+
+.monthBoxs {
+  display: inline-block;
+}
+
+.recordL, .recordR {
+  display: inline-block;
+  float: left;
+}
+
+.recordL {
+  width: 230px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+.recordR {
+  width: calc(100% - 230px);
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.boxs3 {
+  display: inline-block;
+  width: calc(100% / 3);
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.m_box50 {
+  display: inline-block;
+  width: 100%;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 50%;
+  }
+}
 
 
+.box80 {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  padding: 25px 0;
 
+  .blank10 {
+    display: inline-block;
+    width: calc(100% / 10);
+    float: left;
+  }
 
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding: 0;
+  }
+}
 
+.box20 {
+  display: inline-block;
+  width: 20%;
+  float: left;
+  padding: 20px 0;
 
-
-
-
-
-
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
 
 
 

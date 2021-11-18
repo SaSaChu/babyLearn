@@ -16,7 +16,7 @@ button {
   background-color: transparent;
 }
 
-.btnRed, .btnBlue, .btnOrange {
+.btnRed, .btnBlue, .btnOrange, .btnGreen {
   display: inline-block;
   cursor: pointer;
   width: 115px;
@@ -95,6 +95,35 @@ button {
     background: linear-gradient(to bottom, #ec7300 14%, #f0ba22 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 }
+
+.btnGreen {
+  background: #4fb500;
+  background: -moz-linear-gradient(top, #4fb500 14%, #ade633 85%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #4fb500 14%, #ade633 85%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #4fb500 14%, #ade633 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    background: -moz-linear-gradient(top, #ade633 14%, #4fb500 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ade633 14%, #4fb500 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ade633 14%, #4fb500 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+
+.arrowO {
+  display: inline-block;
+  color: $color_orange;
+  font-size: 2rem;
+  line-height: 42px;
+}
+
+
+
+
+
+
+
+
 
 
 

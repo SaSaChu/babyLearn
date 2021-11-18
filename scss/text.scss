@@ -98,6 +98,107 @@ p {
   color: rgba(91, 91, 91, 1.00);
 }
 
+.text24 {
+  display: inline-block;
+  float: left;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: rgba(91, 91, 91, 1.00);
+
+  // 使用：學習紀錄王小明
+  @include range-width(0, 450px) {
+    padding-bottom: 20px;
+  }
+}
+
+.timeTotal {
+  display: inline-block;
+  float: right;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  color: $color_orange;
+
+  &:before {
+    display: inline-block;
+    content: '本月學習時數：';
+  }
+
+  &:after {
+    display: inline-block;
+    content: '分鐘';
+  }
+}
+
+.month {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 2.4rem;
+  color: $color_orange;
+  float: left;
+  margin: 0 10px;
+
+  &:after {
+    display: inline-block;
+    content: '月';
+  }
+}
+
+.rVideoText {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: $color_orange;
+  float: left;
+  line-height: 35px;
+}
+
+.number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(230, 75, 20, 1.00);
+  @include border-radius(50px);
+  color: white;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  line-height: 30px;
+  margin-bottom: 10px;
+
+  @include range-width(0, 450px) {
+    width: 25px;
+    height: 25px;
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+}
+
+.gameTatle {
+  display: inline-block;
+  // width: 100%;
+  font-weight: bolder;
+  font-size: 2.4rem;
+  color: rgba(230, 75, 20, 1.00);
+  margin-bottom: 10px;
+
+  &:after {
+    display: inline-block;
+    content: '分';
+  }
+
+  @include range-width(0, 450px) {
+    float: left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

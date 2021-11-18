@@ -2,6 +2,10 @@
 
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_LYellow { background-color: #fff6d7; }
+
+.bg_LPink { background-color: #fff3f6; }
+
 .m_header_r { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0063aa; color: white; font-size: 1.5rem; line-height: 40px; } }
 

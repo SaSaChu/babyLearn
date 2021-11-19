@@ -1,9 +1,15 @@
 @charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.bgWhite { background-color: white; }
+
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_index { background-image: linear-gradient(to bottom, #407cff 14%, #ffd6b8 85%); background-color: #ffd6b8; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
 .bg_paperBlue { background-image: linear-gradient(to bottom, #407cff 14%, #6ee5ff 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
+.bg_paperPink { background-image: linear-gradient(to bottom, #4d82fd 14%, #e2c2e1 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
 .bg_LYellow { background-color: #fff6d7; }
 
@@ -11,8 +17,18 @@
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
+select { display: block; height: 41px; line-height: 40px; font-size: 1.4rem; width: 240px; margin: 20px; background: url("../img/jiantou.png") no-repeat right center; float: right; padding: 0 0 0 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border-color: #55cafa; }
+@media screen and (max-width: 449px) and (min-width: 0) { select { margin: 0 auto; margin-top: 30px; } }
+
+.select { appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; -khtml-appearance: none; }
+
+.select::-ms-expand { display: none; }
+
 .loginInput { display: inline-block; width: 70%; background-color: white !important; border: 2px solid #60d0fb; padding: 8px 15px; font-size: 1.2rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .loginInput { width: 100%; } }
+
+.indexInput { display: inline-block; width: 100%; max-width: 125px; background-color: #e2e2e2; border: 0; padding: 8px 15px; font-size: 1.2rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
+.indexInput.mi_input { width: calc(100% - 72px); max-width: none; float: right; padding: 5px 10px; }
 
 .setInput { display: inline-block; width: 80%; background-color: transparent; padding: 0 0 5px 10px; font-size: 1.5rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .setInput { padding: 0 0 5px 0; width: 75%; } }

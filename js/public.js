@@ -7,6 +7,7 @@ $(function() {
     $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('l_show').siblings().removeClass('l_show')
   })
 
+
   $('.t-close').click(function() {
     $('#myModel').removeClass('showModel')
   }) 
@@ -19,6 +20,9 @@ $(function() {
   $('.menuClose').click(function() {
     $('.m_menu').removeClass('menu_open');
   });
+
+  // 圖片縮放
+  $(".brandPicImg, .acImg").imgLiquid ();
 
 });
 

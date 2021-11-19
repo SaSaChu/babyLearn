@@ -10,6 +10,35 @@ input, textarea {
   -webkit-appearance: none; /* Safari 和 Chrome */
 }
 
+
+select{ 
+  display:block;
+  height:41px;
+  line-height:40px;
+  font-size: 1.4rem;
+  width:240px;
+  margin:20px;
+  background: url("../img/jiantou.png") no-repeat right center;
+  float: right;
+  padding: 0 0 0 10px;
+  @include border-radius(5px);
+  border-color: rgba(85, 202, 250, 1.00);
+
+  @include range-width(0, 450px) {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+.select{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  -khtml-appearance:none;
+}
+.select::-ms-expand { display: none;}
+
 .loginInput {
   display: inline-block;
   width: 70%;
@@ -21,6 +50,24 @@ input, textarea {
 
   @include range-width(0, 450px) {
     width: 100%;
+  }
+}
+
+.indexInput {
+  display: inline-block;
+  width: 100%;
+  max-width: 125px;
+  background-color: rgba(226, 226, 226, 1.00);
+  border: 0;
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  @include border-radius(20px);
+
+  &.mi_input {
+    width: calc(100% - 72px);
+    max-width: none;
+    float: right;
+    padding: 5px 10px;
   }
 }
 

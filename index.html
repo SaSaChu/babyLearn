@@ -23,8 +23,7 @@
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
 
-  <body>
-    
+  <body class="bg_index">
     <header>
       <div class='header_l'>
         <a href="index.html"><img class='logo' src="img/logo.svg"></a>
@@ -35,14 +34,61 @@
       </div>
 
       <div class='header_r'>
-
+        <div class="hInputBox m-e-10">
+          <div class="indexName">會員編號</div>
+          <input class='indexInput' type="text" >
+        </div>
+        <div class="hInputBox m-e-10">
+          <div class="indexName">密碼</div>
+          <input class='indexInput' type="text" >
+        </div>
+        <button class="btnOrange wNotFull">登入</button>
+        <a href="fpw.html" class="btnOrange">忘記密碼</a>
       </div>
 
       <!-- 手機Menu・觸發 -->
       <div class='m_header_r icon-navicon'></div>
     </header>
 
+    <!-- 手機Menu・內容 -->
+    <div class='m_menu'>
+      <div class='menuBox'>
+        <!-- menu header -->
+        <div class='m_header'>
+          <div class="allBoxs textAlign_L">
+            <img class='m_header_img nb_h_i' src="img/m-logo.svg">
+            <div class="m_headerBoxsR">
+              <div class="hInputBox">
+                <div class="indexName mi">會員編號</div>
+                <input class='indexInput mi_input' type="text" >
+              </div>
+              <div class="hInputBox">
+                <div class="indexName mi">密碼</div>
+                <input class='indexInput mi_input' type="text" >
+              </div>
+              <a href="setting.html" class="btnOrange m_color_btn m-t-10">設定</a>
+              <a href="record.html" class="btnOrange m_color_btn m-t-10">學習紀錄</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="m_center">
+          <a href="math.html" class="mLink"><img src="img/m-menu01.svg">數學魔法列車</a>
+          <a href="language.html" class="mLink"><img src="img/m-menu02.svg">語文夢幻高塔</a>
+          <a href="think.html" class="mLink"><img src="img/m-menu03.svg">思考力冒險迷宮</a>
+          <a href="video.html" class="mLink"><img src="img/m-menu04.svg">看影片輕鬆學</a>
+          <a href="activity.html" class="mLink"><img src="img/m-menu05.svg">活動區</a>
+          <a href="notmember.html" class="mLink"><img src="img/m-menu06.svg">非會員體驗區</a>
+        </div>
+      </div>
+      <div class='menuClose'><img src="img/icon_close.svg"></div>
+    </div>
+
+    <div style="height: 500px;"></div>
+
+    <footer>
+      Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc. 巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</br>
+      Copyright © Benesse Corporation / 巧虎
+    </footer>
   </body>
-
 </html>

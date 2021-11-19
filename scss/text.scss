@@ -31,6 +31,21 @@ p {
   }
 }
 
+.indexName {
+  display: inline-block;
+  font-weight: bolder;
+  color: $font_grey;
+  font-size: 1.4rem;
+  line-height: 35px;
+  margin-right: 5px;
+
+  &.mi {
+    width: 65px;
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+}
+
 .loginName {
   display: inline-block;
   width: 30%;
@@ -45,6 +60,12 @@ p {
   @include range-width(0, 450px) {
     width: 100%;
     text-align: center;
+  }
+
+  &.ln_be {
+    &:before {
+      display: none;
+    }
   }
 
   &:before {
@@ -93,9 +114,19 @@ p {
 .text18 {
   display: inline-block;
   float: left;
+  text-align: left;
   font-size: 1.4rem;
   font-weight: bolder;
   color: rgba(91, 91, 91, 1.00);
+}
+
+.text20 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: rgba(91, 91, 91, 1.00);
+  padding-top: 15px;
 }
 
 .text24 {
@@ -108,6 +139,18 @@ p {
   // 使用：學習紀錄王小明
   @include range-width(0, 450px) {
     padding-bottom: 20px;
+
+    &:before {
+      display: block !important;
+      font-size: 1.4rem;
+    }
+  }
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    color: $color_orange;
+    margin-right: 5px;
   }
 }
 
@@ -189,6 +232,36 @@ p {
     float: left;
   }
 }
+
+.acTatle {
+  display: inline-block;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 2.4rem;
+  text-align: left;
+  color: $font_grey;
+
+  &.atb {
+    color: $color_Blue;
+  }
+
+  &.atp {
+    color: rgba(255, 112, 162, 1.00);
+  }
+
+  @include range-width(0, 450px) {
+    text-align: center;
+  }
+}
+
+.texto14 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: left;
+  color: $color_orange;
+}
+
 
 
 

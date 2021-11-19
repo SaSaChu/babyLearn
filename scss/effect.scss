@@ -126,7 +126,17 @@
   &.showModel {
     display: flex;
   }
+
+  &.showModel2 {
+    display: flex;  
+  }
   
+  @include range-width(0, 450px) {
+    &.showModel2 {
+      align-items: flex-start;
+    }
+  }
+
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -160,6 +170,13 @@
 		  background: linear-gradient(to bottom, #cc1824 14%, #ec7e5a 85%);
 	  }
 
+    &.poupYellow {
+      background: #fff8d9;
+      background: -moz-linear-gradient(top, #ffe75d 14%, #fff8d9 85%); 
+      background: -webkit-linear-gradient(top, #ffe75d 14%, #fff8d9 85%); 
+      background: linear-gradient(to bottom, #ffe75d 14%, #fff8d9 85%);
+    }
+
 	  .poupBoxs_bg {
 	    display: inline-block;
 	    width: 100%;
@@ -174,7 +191,12 @@
 			  background: linear-gradient(to bottom, #ffffff 14%, #fff8dc 85%);
 		  }
 
-	    
+	    &.poupYellow_bg {
+        background: #fff8d9;
+        background: -moz-linear-gradient(top, #fff8d9 14%, #ffe75d 85%);
+        background: -webkit-linear-gradient(top, #fff8d9 14%, #ffe75d 85%); 
+        background: linear-gradient(to bottom, #fff8d9 14%, #ffe75d 85%);
+      }
 
 	    @include range-width(0, 450px) {
 	      padding: 10px;

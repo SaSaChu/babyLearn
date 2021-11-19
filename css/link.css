@@ -1,8 +1,14 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.bgWhite { background-color: white; }
+
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_index { background-image: linear-gradient(to bottom, #407cff 14%, #ffd6b8 85%); background-color: #ffd6b8; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
 .bg_paperBlue { background-image: linear-gradient(to bottom, #407cff 14%, #6ee5ff 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
+.bg_paperPink { background-image: linear-gradient(to bottom, #4d82fd 14%, #e2c2e1 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
 .bg_LYellow { background-color: #fff6d7; }
 

@@ -17,6 +17,10 @@ $color_LBlue: rgba(66, 148, 255, 1.00);
 $color_Blue: rgba(0, 128, 255, 1.00);
 $color_orange: rgba(246, 136, 28, 1.00); // 橘色
 
+.bgWhite {
+	background-color: white;
+}
+
 .bg_login {
 	background-image: linear-gradient(to bottom, rgba(60, 177, 255, 1) 14%,  rgba(255, 237, 172, 1) 85%);
 	background-color: rgba(255, 237, 172, 1);
@@ -24,8 +28,22 @@ $color_orange: rgba(246, 136, 28, 1.00); // 橘色
   background-position: bottom right, left, right;
 }
 
+.bg_index {
+	background-image: linear-gradient(to bottom,  rgba(64, 124, 255, 1.00) 14%,  rgba(255, 214, 184, 1.00) 85%);
+	background-color: rgba(255, 214, 184, 1.00);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+}
+
 .bg_paperBlue {
 	background-image: linear-gradient(to bottom, rgba(64, 124, 255, 1.00) 14%,  rgba(110, 229, 255, 1.00) 85%);
+	background-color: rgba(64, 124, 255, 1.00);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+}
+
+.bg_paperPink {
+	background-image: linear-gradient(to bottom, rgba(77, 130, 253, 1.00) 14%,  rgba(226, 194, 225, 1.00) 85%);
 	background-color: rgba(64, 124, 255, 1.00);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom right, left, right;

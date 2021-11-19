@@ -2,9 +2,15 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.bgWhite { background-color: white; }
+
 .bg_login { background-image: linear-gradient(to bottom, #3cb1ff 14%, #ffedac 85%); background-color: #ffedac; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_index { background-image: linear-gradient(to bottom, #407cff 14%, #ffd6b8 85%); background-color: #ffd6b8; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
 .bg_paperBlue { background-image: linear-gradient(to bottom, #407cff 14%, #6ee5ff 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
+.bg_paperPink { background-image: linear-gradient(to bottom, #4d82fd 14%, #e2c2e1 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
 .bg_LYellow { background-color: #fff6d7; }
 
@@ -19,8 +25,12 @@ p { padding: 0; margin: 0; }
 .loginTitle { display: inline-block; width: 100%; text-align: left; font-size: 2.8rem; font-weight: bolder; font-family: "cwTeXYen", sans-serif; font-weight: bolder; color: #4294ff; }
 @media screen and (max-width: 449px) and (min-width: 0) { .loginTitle { font-size: 2rem; } }
 
+.indexName { display: inline-block; font-weight: bolder; color: #5b5b5b; font-size: 1.4rem; line-height: 35px; margin-right: 5px; }
+.indexName.mi { width: 65px; font-size: 1.2rem; line-height: 28px; }
+
 .loginName { display: inline-block; width: 30%; padding-right: 5px; font-weight: bolder; color: #5b5b5b; font-size: 1.4rem; text-align: left; float: left; line-height: 36px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .loginName { width: 100%; text-align: center; } }
+.loginName.ln_be:before { display: none; }
 .loginName:before { display: inline-block; content: '*'; color: red; margin-right: 5px; }
 
 .notetext { display: inline-block; width: 100%; font-size: 1.5rem; font-weight: bolder; }
@@ -31,10 +41,14 @@ p { padding: 0; margin: 0; }
 .setTitle { display: inline-block; width: 100%; font-size: 2.8rem; font-weight: bolder; font-family: "cwTeXYen", sans-serif; font-weight: bolder; color: #4294ff; margin-bottom: 20px; border-bottom: 1px dotted #0080ff; }
 @media screen and (max-width: 449px) and (min-width: 0) { .setTitle { font-size: 2.4rem; } }
 
-.text18 { display: inline-block; float: left; font-size: 1.4rem; font-weight: bolder; color: #5b5b5b; }
+.text18 { display: inline-block; float: left; text-align: left; font-size: 1.4rem; font-weight: bolder; color: #5b5b5b; }
+
+.text20 { display: inline-block; width: 100%; font-size: 1.6rem; font-weight: bolder; color: #5b5b5b; padding-top: 15px; }
 
 .text24 { display: inline-block; float: left; font-size: 1.8rem; font-weight: bolder; color: #5b5b5b; }
-@media screen and (max-width: 449px) and (min-width: 0) { .text24 { padding-bottom: 20px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .text24 { padding-bottom: 20px; }
+  .text24:before { display: block !important; font-size: 1.4rem; } }
+.text24:before { display: inline-block; content: attr(title); color: #f6881c; margin-right: 5px; }
 
 .timeTotal { display: inline-block; float: right; font-weight: bolder; font-size: 1.6rem; color: #f6881c; }
 .timeTotal:before { display: inline-block; content: '本月學習時數：'; }
@@ -51,3 +65,10 @@ p { padding: 0; margin: 0; }
 .gameTatle { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #e64b14; margin-bottom: 10px; }
 .gameTatle:after { display: inline-block; content: '分'; }
 @media screen and (max-width: 449px) and (min-width: 0) { .gameTatle { float: left; } }
+
+.acTatle { display: inline-block; width: 100%; font-weight: bolder; font-size: 2.4rem; text-align: left; color: #5b5b5b; }
+.acTatle.atb { color: #0080ff; }
+.acTatle.atp { color: #ff70a2; }
+@media screen and (max-width: 449px) and (min-width: 0) { .acTatle { text-align: center; } }
+
+.texto14 { display: inline-block; width: 100%; font-size: 1.4rem; text-align: left; color: #f6881c; }

@@ -54,6 +54,9 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 .boxs70 { width: 70%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs70 { width: 100%; } }
 
+.box1000 { display: inline-block; width: 100%; max-width: 1000px; margin: 0 auto; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box1000 { width: 100%; padding: 0 25px; } }
+
 .box880 { display: inline-block; width: 100%; max-width: 880px; margin: 0 auto; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box880 { width: 100%; padding: 0 25px; } }
 
@@ -158,3 +161,12 @@ footer { display: inline-block; width: 100%; padding: 20px; margin-top: 80px; fo
 .wB4:nth-child(4n+4) { margin-right: 0; }
 .wB4:nth-child(n+5) { margin-top: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .wB4 { width: 100%; margin-right: 0; margin-top: 0; margin-bottom: 30px; } }
+
+.videoL { display: inline-block; width: 30%; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .videoL { width: 100%; } }
+
+.videoR { display: inline-block; width: 70%; float: left; padding-left: 20px; margin-top: 40px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .videoR { width: 100%; padding-left: 0; margin-top: 30px; } }
+
+.v_sboxs { display: inline-block; width: calc(100% / 3 - 10px * 2 / 3); float: left; }
+.v_sboxs:nth-child(2) { margin-right: 10px; margin-left: 10px; }

@@ -72,3 +72,6 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .acTatle { text-align: center; } }
 
 .texto14 { display: inline-block; width: 100%; font-size: 1.4rem; text-align: left; color: #f6881c; }
+
+.text_vd14 { display: inline-block; width: 100%; font-size: 1.4rem; color: #f6881c; padding-top: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text_vd14 { font-size: 1rem; } }

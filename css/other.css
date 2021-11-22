@@ -70,3 +70,9 @@
 
 .acImg { display: inline-block; width: 100%; height: 125px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .acImg { height: 185px; } }
+
+.video_cp { display: inline-block; width: 100%; max-width: 225px; margin-bottom: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .video_cp { margin-bottom: 0; } }
+
+.v_size { display: inline-block; width: 100%; height: 125px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .v_size { height: 60px; } }

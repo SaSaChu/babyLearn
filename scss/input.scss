@@ -10,6 +10,78 @@ input, textarea {
   -webkit-appearance: none; /* Safari 和 Chrome */
 }
 
+.input-file-container {
+  position: relative;
+  width: 170px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.js {
+  .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    @include border-radius(5px);
+    background-color: rgba(66, 148, 255, 1.00);
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .4s;
+    cursor: pointer;
+    margin-top: -18px;
+  }
+
+  .input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+      position: inherit;
+      padding: 0;
+    }
+
+    &:hover + .input-file-trigger, &:focus + .input-file-trigger {
+      background: rgba(66, 148, 255, .8);
+      color: #fff;
+    }
+  }
+
+  .input-file-trigger {
+    &:hover, &:focus {
+      background: rgba(66, 148, 255, .8);
+      color: #fff;
+    }
+  }
+}
+
+.file-return {
+  margin: 0;
+
+  &:not(:empty) {
+    margin: 1em 0;
+  }
+}
+
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+
+  &:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+
 
 select{ 
   display:block;
@@ -27,6 +99,28 @@ select{
   @include range-width(0, 450px) {
     margin: 0 auto;
     margin-top: 30px;
+  }
+
+  &.ac_select {
+    margin: 0;
+    width: 70%;
+    border: 2px solid rgba(226, 226, 226, 1.00);
+    @include border-radius(5px);
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+
+  &.ve_select {
+    margin: 0;
+    width: 100%;
+    border: 2px solid rgba(226, 226, 226, 1.00);
+    @include border-radius(5px);
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
   }
 }
 .select{
@@ -50,6 +144,11 @@ select{
 
   @include range-width(0, 450px) {
     width: 100%;
+  }
+
+  &.acUse {
+    border: 2px solid rgba(226, 226, 226, 1.00);
+    @include border-radius(5px);
   }
 }
 

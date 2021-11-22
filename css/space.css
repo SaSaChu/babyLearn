@@ -16,6 +16,9 @@
 
 .m-t-30 { margin-top: 30px; }
 
+.m-t-60 { margin-top: 60px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m-t-60 { margin-top: 30px; } }
+
 .m-y-20 { margin: 20px 0; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .mm-y-20 { margin: 20px 0; } }

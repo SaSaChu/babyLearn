@@ -262,6 +262,17 @@ p {
   color: $color_orange;
 }
 
+.text_vd14 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+  color: $color_orange;
+  padding-top: 10px;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
+}
 
 
 

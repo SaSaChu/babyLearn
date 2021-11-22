@@ -193,4 +193,24 @@
   }
 }
 
+.video_cp {
+  display: inline-block;
+  width: 100%;
+  max-width: 225px;
+  margin-bottom: 20px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 0;
+  }
+}
+
+.v_size {
+  display: inline-block;
+  width: 100%;
+  height: 125px;
+
+  @include range-width(0, 450px) {
+    height: 60px;
+  }
+}
 

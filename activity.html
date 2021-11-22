@@ -314,24 +314,32 @@
                 <div class="allBoxs p-y-20 borderB_Blue_dotted ">
                   <div class="allBoxs p-y-10">
                     <div class="loginName ln_be">會員編號</div>
-                    <input class='loginInput' type="text" placeholder="會員編號就在教材信封名條上" >
+                    <input class='loginInput acUse' type="text" placeholder="請輸入" >
                   </div>
                   <div class="allBoxs p-y-10">
                     <div class="loginName ln_be">姓名</div>
-                    <input class='loginInput' type="text" placeholder="會員編號就在教材信封名條上" >
+                    <input class='loginInput acUse' type="text" placeholder="請輸入" >
                   </div>
                   <div class="allBoxs p-y-10">
                     <div class="loginName ln_be">投稿主題</div>
-                    <select class="select m_floatNone">
-                      <option>12月</option>
-                      <option>11月</option>
-                      <option>10月</option>
-                      <option>09月</option>
+                    <select class="select ac_select m_floatNone">
+                      <option>主題名稱一</option>
+                      <option>主題名稱二</option>
+                      <option>主題名稱三</option>
+                      <option>主題名稱四</option>
                     </select>
                   </div>
                   <div class="allBoxs p-y-10">
                     <div class="loginName ln_be">上傳檔案</div>
-                    <input type="file" />
+                    <div class="boxs70 floatR m_floatNone">
+                      <form action="#">
+                        <div class="input-file-container">  
+                          <input class="input-file" id="my-file" type="file">
+                          <label tabindex="0" for="my-file" class="input-file-trigger">請選擇檔案</label>
+                        </div>
+                        <p class="file-return"></p>
+                      </form>
+                    </div>
                   </div>
                 </div>
 
@@ -351,6 +359,28 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      document.querySelector("html").classList.add('js');
+
+      var fileInput  = document.querySelector( ".input-file" ),  
+          button     = document.querySelector( ".input-file-trigger" ),
+          the_return = document.querySelector(".file-return");
+            
+      button.addEventListener( "keydown", function( event ) {  
+          if ( event.keyCode == 13 || event.keyCode == 32 ) {  
+              fileInput.focus();  
+          }  
+      });
+      button.addEventListener( "click", function( event ) {
+         fileInput.focus();
+         return false;
+      });
+      fileInput.addEventListener( "change", function( event ) {  
+          the_return.innerHTML = this.value;  
+      });
+    </script>
+
   </body>
 </html>
 

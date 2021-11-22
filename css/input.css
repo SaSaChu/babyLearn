@@ -17,8 +17,27 @@
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
+.input-file-container { position: relative; width: 170px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .input-file-container { width: 100%; } }
+
+.js .input-file-trigger { display: block; padding: 14px 45px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #4294ff; color: #fff; font-size: 1.2rem; transition: all .4s; cursor: pointer; margin-top: -18px; }
+.js .input-file { position: absolute; top: 0; left: 0; width: 170px; opacity: 0; padding: 14px 0; cursor: pointer; }
+@media screen and (max-width: 449px) and (min-width: 0) { .js .input-file { width: 100%; position: inherit; padding: 0; } }
+.js .input-file:hover + .input-file-trigger, .js .input-file:focus + .input-file-trigger { background: rgba(66, 148, 255, 0.8); color: #fff; }
+.js .input-file-trigger:hover, .js .input-file-trigger:focus { background: rgba(66, 148, 255, 0.8); color: #fff; }
+
+.file-return { margin: 0; }
+.file-return:not(:empty) { margin: 1em 0; }
+
+.js .file-return { font-style: italic; font-size: .9em; font-weight: bold; }
+.js .file-return:not(:empty):before { content: "Selected file: "; font-style: normal; font-weight: normal; }
+
 select { display: block; height: 41px; line-height: 40px; font-size: 1.4rem; width: 240px; margin: 20px; background: url("../img/jiantou.png") no-repeat right center; float: right; padding: 0 0 0 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border-color: #55cafa; }
 @media screen and (max-width: 449px) and (min-width: 0) { select { margin: 0 auto; margin-top: 30px; } }
+select.ac_select { margin: 0; width: 70%; border: 2px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { select.ac_select { width: 100%; } }
+select.ve_select { margin: 0; width: 100%; border: 2px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { select.ve_select { width: 100%; } }
 
 .select { appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; -khtml-appearance: none; }
 
@@ -26,6 +45,7 @@ select { display: block; height: 41px; line-height: 40px; font-size: 1.4rem; wid
 
 .loginInput { display: inline-block; width: 70%; background-color: white !important; border: 2px solid #60d0fb; padding: 8px 15px; font-size: 1.2rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .loginInput { width: 100%; } }
+.loginInput.acUse { border: 2px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 
 .indexInput { display: inline-block; width: 100%; max-width: 125px; background-color: #e2e2e2; border: 0; padding: 8px 15px; font-size: 1.2rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 .indexInput.mi_input { width: calc(100% - 72px); max-width: none; float: right; padding: 5px 10px; }

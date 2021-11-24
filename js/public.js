@@ -22,7 +22,7 @@ $(function() {
   });
 
   // 圖片縮放
-  $(".brandPicImg, .acImg, .v_size").imgLiquid ();
+  $(".brandPicImg, .acImg, .v_size, .ibanner").imgLiquid ();
 
 });
 

@@ -1,6 +1,7 @@
 @import "Ginkgo";
 @import "color";
 
+
 .mob_open {
   display: none !important;
   @include range-width(0, 450px) {

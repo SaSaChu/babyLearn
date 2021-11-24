@@ -1,6 +1,166 @@
 @import "Ginkgo";
 @import "color";
 
+// 首頁
+.bannerBoxs {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 6666;
+  padding: 0 20px;
+
+  // d
+  // background-color: rgba(255, 0, 0, 0.2);
+
+  .ibOut {
+    display: inline-block;
+    width: 100%;
+    max-width: 1150px;
+
+    .ibanner {
+      display: inline-block;
+      width: calc(100% / 4 - 15px * 3 / 4);
+      height: 120px;
+      float: left;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      background-color: white;
+      @include border-radius(10px);
+      
+    }
+  }
+}
+
+.footerbox {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5555;
+
+  height: 62px;
+  background-image: url(../img/index/wave03.svg);
+  background-repeat: repeat-x;
+}
+
+.indexFT {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  font-size: 1rem;
+  background-color: #134b7b;
+  color: white;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  z-index: 5555;
+  background-image: url(../img/index/bbg.svg);
+  background-repeat: repeat;
+}
+
+.indexBoxs {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+
+  .lightBox {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2222;
+  }
+
+  .imgBox {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3333;
+
+    .addbox {
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      max-width: 1050;
+      height: 100%;
+
+      .link01, .link02, .link03, .link04, .link05, .link06 {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+
+        // background-color: rgba(255, 0, 0, 0.2);
+      } 
+
+      // 看影片輕鬆學
+      .link01 {
+        width: 200px;
+        height: 255px;
+        bottom: 115px;
+        left: 600px;
+      }
+
+      // 非會員體驗區
+      .link02 {
+        width: 340px;
+        height: 360px;
+        bottom: 75px;
+        left: 255px;
+      }
+
+      // 數學魔法列車
+      .link03 {
+        width: 260px;
+        height: 375px;
+        top: 178px;
+        left: 480px;
+      }
+
+      // 語文夢幻高塔
+      .link04 {
+        width: 190px;
+        height: 350px;
+        top: 45px;
+        left: 45%;
+      }
+
+      // 活動區
+      .link05 {
+        width: 200px;
+        height: 340px;
+        top: 155px;
+        right: 365px;
+      }
+
+      // 思考力冒險迷宮
+      .link06 {
+        width: 270px;
+        height: 330px;
+        bottom: 90px;
+        right: 295px;
+      }
+    }
+  }
+
+  .linkaddfooter {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+
+
 // 手機Menu
 .m_header_r {
   display: none;

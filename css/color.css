@@ -6,6 +6,8 @@
 
 .bg_index { background-image: linear-gradient(to bottom, #407cff 14%, #ffd6b8 85%); background-color: #ffd6b8; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
+.bg_index_not { background-image: linear-gradient(to bottom, #ffca93 14%, #cfa7ff 85%); background-color: #cfa7ff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
+
 .bg_paperBlue { background-image: linear-gradient(to bottom, #407cff 14%, #6ee5ff 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }
 
 .bg_paperPink { background-image: linear-gradient(to bottom, #4d82fd 14%, #e2c2e1 85%); background-color: #407cff; background-repeat: no-repeat, no-repeat, no-repeat; background-position: bottom right, left, right; }

@@ -86,7 +86,7 @@ header {
   text-align: left;
 
   @include range-width(0, 770px) {
-    width: 85%;
+    width: calc(100% - 60px);
   }
 }
 

@@ -59,6 +59,15 @@
   @include range-width(1300px) {
     bottom: -2%;
   }
+
+  @include range-width(450px, 770px) {
+    bottom: -1%;
+  }
+
+  @include range-width(0, 450px) {
+    bottom: 7%;
+    height: 25px;
+  }
 }
 
 .indexFT {
@@ -78,6 +87,16 @@
 
   @include range-width(1300px) {
     bottom: -8%;
+  }
+
+  @include range-width(450px, 770px) {
+    bottom: -8%;
+  }
+
+  @include range-width(0, 450px) {
+    padding: 5px;
+    font-size: .8rem;
+    bottom: -4%;
   }
 }
 
@@ -116,7 +135,7 @@
         cursor: pointer;
         width: 100%;
 
-        // background-color: rgba(255, 0, 0, 0.2);
+        background-color: rgba(255, 0, 0, 0.2);
       } 
 
       // 看影片輕鬆學
@@ -126,9 +145,39 @@
         bottom: 17%;
         left: 37%;
 
+        &.already01 {
+          @include range-width(450px, 770px) {
+            max-width: 180px;
+            height: 240px;
+            bottom: 21%;
+            left: 10%;
+          }
+
+          @include range-width(0, 450px) {
+            max-width: 94px;
+            height: 131px;
+            bottom: 20%;
+            left: 9%;
+          }
+        }
+
         @include range-width(770px, 1500px) {
           max-width: 130px;
           height: 184px;
+        }
+
+        @include range-width(450px, 770px) {
+          max-width: 180px;
+          height: 240px;
+          bottom: 13%;
+          left: 51%;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 85px;
+          height: 105px;
+          bottom: 15%;
+          left: 51%;
         }
       }
 
@@ -143,6 +192,18 @@
           max-width: 214px;
           height: 237px;
         }
+
+        @include range-width(450px, 770px) {
+          bottom: 20%;
+          left: 1%;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 114px;
+          height: 153px;
+          bottom: 21%;
+          left: 7%;
+        }
       }
 
       // 數學魔法列車
@@ -155,6 +216,19 @@
         @include range-width(770px, 1500px) {
           max-width: 191px;
           height: 276px;
+        }
+
+        @include range-width(450px, 770px) {
+          height: 340px;
+          top: 25%;
+          left: 8%;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 109px;
+          height: 190px;
+          top: 21%;
+          left: 8%;
         }
       }
 
@@ -169,6 +243,18 @@
           max-width: 137px;
           height: 252px;
         }
+
+        @include range-width(450px, 770px) {
+          top: 15%;
+          left: 37%;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 90px;
+          height: 155px;
+          top: 14%;
+          left: 38%;
+        }
       }
 
       // 活動區
@@ -182,6 +268,18 @@
           max-width: 149px;
           height: 245px;
         }
+
+        @include range-width(450px, 770px) {
+          top: 7%;
+          right: 7%;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 103px;
+          height: 150px;
+          top: 6%;
+          right: 7%;
+        }
       }
 
       // 思考力冒險迷宮
@@ -194,6 +292,19 @@
         @include range-width(770px, 1500px) {
           max-width: 179px;
           height: 214px;
+        }
+
+        @include range-width(450px, 770px) {
+          bottom: 24%;
+          right: 1%;
+          max-width: 245px;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 102px;
+          height: 150px;
+          bottom: 23%;
+          right: 4%;
         }
       }
     }

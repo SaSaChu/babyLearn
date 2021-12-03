@@ -37,7 +37,10 @@
 .indexBoxs .lightBox { display: inline-block; width: 100%; position: absolute; top: 0; left: 0; z-index: 2222; }
 .indexBoxs .imgBox { display: inline-block; width: 100%; position: absolute; top: 0; left: 0; z-index: 3333; }
 .indexBoxs .imgBox .addbox { display: inline-block; position: absolute; width: 100%; height: 100%; }
-.indexBoxs .imgBox .addbox .link01, .indexBoxs .imgBox .addbox .link02, .indexBoxs .imgBox .addbox .link03, .indexBoxs .imgBox .addbox .link04, .indexBoxs .imgBox .addbox .link05, .indexBoxs .imgBox .addbox .link06 { display: inline-block; position: absolute; cursor: pointer; width: 100%; }
+.indexBoxs .imgBox .addbox .link00, .indexBoxs .imgBox .addbox .link01, .indexBoxs .imgBox .addbox .link02, .indexBoxs .imgBox .addbox .link03, .indexBoxs .imgBox .addbox .link04, .indexBoxs .imgBox .addbox .link05, .indexBoxs .imgBox .addbox .link06 { display: inline-block; position: absolute; cursor: pointer; width: 100%; }
+.indexBoxs .imgBox .addbox .link00 { max-width: 227px; height: 155px; top: 3%; left: 13%; }
+@media screen and (max-width: 769px) and (min-width: 450px) { .indexBoxs .imgBox .addbox .link00 { left: 9%; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .indexBoxs .imgBox .addbox .link00 { max-width: 110px; height: 79px; top: 3%; left: 11%; } }
 .indexBoxs .imgBox .addbox .link01 { max-width: 200px; height: 255px; bottom: 17%; left: 37%; }
 @media screen and (max-width: 769px) and (min-width: 450px) { .indexBoxs .imgBox .addbox .link01.already01 { max-width: 180px; height: 240px; bottom: 21%; left: 10%; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .indexBoxs .imgBox .addbox .link01.already01 { max-width: 94px; height: 131px; bottom: 20%; left: 9%; } }

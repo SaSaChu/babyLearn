@@ -129,7 +129,7 @@
       // max-width: 1050px;
       height: 100%;
 
-      .link01, .link02, .link03, .link04, .link05, .link06 {
+      .link00, .link01, .link02, .link03, .link04, .link05, .link06 {
         display: inline-block;
         position: absolute;
         cursor: pointer;
@@ -137,6 +137,25 @@
 
         // background-color: rgba(255, 0, 0, 0.2);
       } 
+
+      // 回首頁
+      .link00 {
+        max-width: 227px;
+        height: 155px;
+        top: 3%;
+        left: 13%;
+
+        @include range-width(450px, 770px) {
+          left: 9%;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 110px;
+          height: 79px;
+          top: 3%;
+          left: 11%;
+        }
+      }
 
       // 看影片輕鬆學
       .link01 {

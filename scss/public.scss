@@ -466,12 +466,18 @@ footer {
     width: 50%;
     top: 0;
     left: 50px;
-
-    img {
+    a {
       display: inline-block;
       width: 100%;
       max-width: 780px;
       float: left;
+      
+      img {
+        display: inline-block;
+        width: 100%;
+        max-width: 780px;
+        float: left;
+      }
     }
   }
 

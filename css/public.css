@@ -139,7 +139,8 @@ footer { display: inline-block; width: 100%; padding: 20px; margin-top: 80px; fo
 @media screen and (max-width: 449px) and (min-width: 0) { .topBar { min-height: auto; padding: 0; } }
 .topBar .topL, .topBar .topR { display: inline-block; float: left; position: absolute; }
 .topBar .topL { width: 50%; top: 0; left: 50px; }
-.topBar .topL img { display: inline-block; width: 100%; max-width: 780px; float: left; }
+.topBar .topL a { display: inline-block; width: 100%; max-width: 780px; float: left; }
+.topBar .topL a img { display: inline-block; width: 100%; max-width: 780px; float: left; }
 .topBar .topR { width: 50%; top: 20px; right: 50px; }
 .topBar .topR img { display: inline-block; width: 100%; max-width: 800px; float: right; }
 

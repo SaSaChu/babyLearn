@@ -65,6 +65,12 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .number { width: 25px; height: 25px; font-size: 1.2rem; line-height: 25px; } }
 
 .gameTatle { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #e64b14; margin-bottom: 10px; }
+.gameTatle.gover { font-size: 1.6rem; margin-bottom: 0; float: left; }
+.gameTatle.gover:after { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .gameTatle.gover { margin-top: 20px; margin-left: 7px; } }
+.gameTatle.gover2 { font-size: 1.6rem; text-align: center; margin-top: -9px; }
+.gameTatle.gover2:after { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .gameTatle.gover2 { font-size: 2rem; margin-top: 4px; margin-left: 37px; } }
 .gameTatle:after { display: inline-block; content: '分'; }
 @media screen and (max-width: 449px) and (min-width: 0) { .gameTatle { float: left; } }
 

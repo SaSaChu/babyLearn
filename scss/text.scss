@@ -223,6 +223,37 @@ p {
   color: rgba(230, 75, 20, 1.00);
   margin-bottom: 10px;
 
+  &.gover {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    float: left;
+
+    &:after {
+      display: none;
+    }
+
+    @include range-width(0, 450px) {
+      margin-top: 20px;
+      margin-left: 7px;
+    }
+  }
+
+  &.gover2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: -9px;
+    
+    &:after {
+      display: none;
+    }
+
+    @include range-width(0, 450px) {
+      font-size: 2rem;
+      margin-top: 4px;
+      margin-left: 37px;
+    }
+  }
+
   &:after {
     display: inline-block;
     content: '分';

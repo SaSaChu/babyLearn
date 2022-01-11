@@ -437,6 +437,10 @@
     padding: 10px 0;
     color: black;
 
+    &.out {
+      padding: 10px 15px;
+    }
+
     &:hover, &:active {
       color: $color_Blue;
     }

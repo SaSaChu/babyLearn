@@ -92,6 +92,7 @@ p {
   @include range-width(0, 450px) {
     font-size: 1.2rem;
     line-height: normal;
+    width: 100%;
   }
 }
 

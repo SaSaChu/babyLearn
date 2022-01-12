@@ -28,6 +28,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .loginTitle { font-size: 2rem; } }
 
 .indexName { display: inline-block; font-weight: bolder; color: #5b5b5b; font-size: 1.4rem; line-height: 35px; margin-right: 5px; }
+@media screen and (max-width: 1009px) and (min-width: 770px) { .indexName { font-size: 1.2rem; } }
 .indexName.mi { width: 65px; font-size: 1.2rem; line-height: 28px; }
 
 .loginName { display: inline-block; width: 30%; padding-right: 5px; font-weight: bolder; color: #5b5b5b; font-size: 1.4rem; text-align: left; float: left; line-height: 36px; }

@@ -35,6 +35,11 @@ body {
   }
 }
 
+.inbg {
+  max-width: 1200px;
+  // max-height: 835px;
+}
+
 // header
 header {
   display: flex;
@@ -60,8 +65,12 @@ header {
     }
   }
 
-  @include range-width(770px, 1190px) {
+  @include range-width(1010px, 1190px) {
     padding: 0 20px;
+  }
+
+  @include range-width(770px, 1010px) {
+    padding: 0 10px;
   }
 
   @include range-width(450px, 770px) {
@@ -85,6 +94,10 @@ header {
   float: left;
   text-align: left;
 
+  @include range-width(770px, 1010px) {
+    width: 35%;
+  }
+
   @include range-width(0, 770px) {
     width: calc(100% - 60px);
   }
@@ -94,6 +107,10 @@ header {
   width: 70%;
   float: right;
   text-align: right;
+
+  @include range-width(770px, 1010px) {
+    width: 65%;
+  }
 
   @include range-width(0, 770px) {
     display: none;
@@ -108,6 +125,10 @@ header {
 .logo {
   max-width: 132px;
   margin-right: 5px;
+
+  @include range-width(770px, 1010px) {
+    max-width: 115px;
+  }
 
   @include range-width(0, 450px) {
     max-width: 85px;
@@ -541,7 +562,8 @@ footer {
 .workBox {
   display: inline-block;
   width: 100%;
-  height: 575px;
+  height: 100%;
+  max-height: 575px;
   overflow-y: scroll;
   margin-top: 20px;
 }

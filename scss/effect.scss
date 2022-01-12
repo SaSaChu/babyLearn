@@ -60,13 +60,14 @@
     bottom: -2%;
   }
 
-  @include range-width(450px, 770px) {
-    bottom: -1%;
-  }
+  // @include range-width(450px, 770px) {
+  //   bottom: -1%;
+  // }
 
-  @include range-width(0, 450px) {
-    bottom: 7%;
-    height: 25px;
+  @include range-width(0, 770px) {
+    // bottom: 7%;
+    // height: 25px;
+    display: none;
   }
 }
 
@@ -89,12 +90,16 @@
     bottom: -8%;
   }
 
+  @include range-width(770px, 850px) {
+    bottom: -18%;
+  }
+
   @include range-width(450px, 770px) {
     bottom: -8%;
   }
 
   @include range-width(0, 450px) {
-    padding: 5px;
+    padding: 10px 0;
     font-size: .8rem;
     bottom: -4%;
   }
@@ -126,8 +131,10 @@
       display: inline-block;
       position: absolute;
       width: 100%;
-      // max-width: 1050px;
+      max-width: 1200px;
       height: 100%;
+      // left: 0;
+      // border: 1px solid rgba(255, 0, 0, .3);
 
       .link00, .link01, .link02, .link03, .link04, .link05, .link06 {
         display: inline-block;
@@ -140,14 +147,15 @@
 
       // 回首頁
       .link00 {
-        max-width: 227px;
-        height: 155px;
+        max-width: 22%;
+        height: 21%;
         top: 3%;
-        left: 13%;
+        left: 9%;
 
-        @include range-width(450px, 770px) {
-          left: 9%;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 163px;
+        //   height: 99px
+        // }
 
         @include range-width(0, 450px) {
           max-width: 110px;
@@ -159,18 +167,19 @@
 
       // 看影片輕鬆學
       .link01 {
-        max-width: 200px;
-        height: 255px;
-        bottom: 17%;
-        left: 37%;
+        max-width: 13%;
+        height: 24%;
+        bottom: 16%;
+        left: 36%;
 
         &.already01 {
-          @include range-width(450px, 770px) {
-            max-width: 180px;
-            height: 240px;
-            bottom: 21%;
-            left: 10%;
-          }
+          left: 33%;
+          // @include range-width(450px, 770px) {
+          //   max-width: 180px;
+          //   height: 240px;
+          //   bottom: 21%;
+          //   left: 10%;
+          // }
 
           @include range-width(0, 450px) {
             max-width: 94px;
@@ -180,17 +189,17 @@
           }
         }
 
-        @include range-width(770px, 1500px) {
-          max-width: 130px;
-          height: 184px;
-        }
+        // @include range-width(770px, 1500px) {
+        //   max-width: 130px;
+        //   height: 184px;
+        // }
 
-        @include range-width(450px, 770px) {
-          max-width: 180px;
-          height: 240px;
-          bottom: 13%;
-          left: 51%;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 180px;
+        //   height: 240px;
+        //   bottom: 13%;
+        //   left: 51%;
+        // }
 
         @include range-width(0, 450px) {
           max-width: 85px;
@@ -202,20 +211,21 @@
 
       // 非會員體驗區
       .link02 {
-        max-width: 300px;
-        height: 330px;
+        max-width: 20%;
+        height: 30%;
         bottom: 16%;
-        left: 18%;
+        left: 15%;
 
-        @include range-width(770px, 1500px) {
-          max-width: 214px;
-          height: 237px;
-        }
+        // @include range-width(770px, 1500px) {
+        //   max-width: 214px;
+        //   height: 237px;
+        // }
 
-        @include range-width(450px, 770px) {
-          bottom: 20%;
-          left: 1%;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 153px;
+        //   height: 165px;
+        //   bottom: 12%;
+        // }
 
         @include range-width(0, 450px) {
           max-width: 114px;
@@ -227,21 +237,20 @@
 
       // 數學魔法列車
       .link03 {
-        max-width: 260px;
-        height: 340px;
-        top: 19%;
+        max-width: 15%;
+        height: 36%;
+        top: 18%;
         left: 29%;
 
-        @include range-width(770px, 1500px) {
-          max-width: 191px;
-          height: 276px;
-        }
+        // @include range-width(770px, 1500px) {
+        //   max-width: 191px;
+        //   height: 276px;
+        // }
 
-        @include range-width(450px, 770px) {
-          height: 340px;
-          top: 25%;
-          left: 8%;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 117px;
+        //   height: 155px;
+        // }
 
         @include range-width(0, 450px) {
           max-width: 109px;
@@ -253,20 +262,20 @@
 
       // 語文夢幻高塔
       .link04 {
-        max-width: 190px;
-        height: 350px;
-        top: 7%;
-        left: 45%;
+        max-width: 12%;
+        height: 35%;
+        top: 5%;
+        left: 44%;
 
-        @include range-width(770px, 1500px) {
-          max-width: 137px;
-          height: 252px;
-        }
+        // @include range-width(770px, 1500px) {
+        //   max-width: 137px;
+        //   height: 252px;
+        // }
 
-        @include range-width(450px, 770px) {
-          top: 15%;
-          left: 37%;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 95px;
+        //   height: 177px;
+        // }
 
         @include range-width(0, 450px) {
           max-width: 90px;
@@ -278,20 +287,20 @@
 
       // 活動區
       .link05 {
-        max-width: 200px;
-        height: 340px;
-        top: 14%;
-        right: 23%;
+        max-width: 15%;
+        height: 45%;
+        top: 2%;
+        right: 19%;
 
-        @include range-width(770px, 1500px) {
-          max-width: 149px;
-          height: 245px;
-        }
+        // @include range-width(770px, 1500px) {
+        //   max-width: 149px;
+        //   height: 245px;
+        // }
 
-        @include range-width(450px, 770px) {
-          top: 7%;
-          right: 7%;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 120px;
+        //   height: 212px;
+        // }
 
         @include range-width(0, 450px) {
           max-width: 103px;
@@ -303,21 +312,20 @@
 
       // 思考力冒險迷宮
       .link06 {
-        max-width: 270px;
-        height: 300px;
-        bottom: 17%;
-        right: 19%;
+        max-width: 17%;
+        height: 33%;
+        bottom: 13%;
+        right: 18%;
 
-        @include range-width(770px, 1500px) {
-          max-width: 179px;
-          height: 214px;
-        }
+        // @include range-width(770px, 1500px) {
+        //   max-width: 179px;
+        //   height: 214px;
+        // }
 
-        @include range-width(450px, 770px) {
-          bottom: 24%;
-          right: 1%;
-          max-width: 245px;
-        }
+        // @include range-width(450px, 770px) {
+        //   max-width: 128px;
+        //   height: 153px;
+        // }
 
         @include range-width(0, 450px) {
           max-width: 102px;
@@ -477,7 +485,7 @@
     }
   }
 
-  cursor: pointer;
+  // cursor: pointer;
   justify-content: center;
   align-items: center;
   position: fixed;

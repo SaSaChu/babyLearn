@@ -21,8 +21,10 @@ a, .cantuse { display: inline-block; cursor: pointer; text-decoration: none; out
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
 
 .btnRed, .btnBlue, .btnOrange, .btnGreen { display: inline-block; cursor: pointer; width: 115px; padding: 8px 0; font-size: 1.4rem; font-weight: bolder; color: white; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; text-align: center; }
+@media screen and (max-width: 1009px) and (min-width: 770px) { .btnRed, .btnBlue, .btnOrange, .btnGreen { font-size: 1.2rem; width: auto; padding: 8px 5px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .btnRed.m_color_btn, .btnBlue.m_color_btn, .btnOrange.m_color_btn, .btnGreen.m_color_btn { font-size: 1.15rem; padding: 5px 0; width: 80px; margin-left: 5px; margin-right: 5px; } }
 .btnRed.wNotFull, .btnBlue.wNotFull, .btnOrange.wNotFull, .btnGreen.wNotFull { width: auto; padding: 8px; margin-right: 15px; }
+@media screen and (max-width: 1009px) and (min-width: 770px) { .btnRed.wNotFull, .btnBlue.wNotFull, .btnOrange.wNotFull, .btnGreen.wNotFull { margin-right: 10px; } }
 .btnRed.wNotFull2, .btnBlue.wNotFull2, .btnOrange.wNotFull2, .btnGreen.wNotFull2 { width: auto; padding: 8px; margin-left: 15px; }
 .btnRed.wNotFull2:before, .btnBlue.wNotFull2:before, .btnOrange.wNotFull2:before, .btnGreen.wNotFull2:before { display: inline-block; content: '\f0c9'; font-family: icon; margin-top: 4px; margin-right: 5px; }
 .btnRed.setUse, .btnBlue.setUse, .btnOrange.setUse, .btnGreen.setUse { width: auto; padding: 5px 12px; font-size: 1.2rem; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; font-weight: normal; margin-bottom: 5px; }

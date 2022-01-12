@@ -27,6 +27,12 @@ button {
   @include border-radius(10px);
   text-align: center;
 
+  @include range-width(770px, 1010px) {
+    font-size: 1.2rem;
+    width: auto;
+    padding: 8px 5px;
+  }
+
   // 使用：手機版menu按鈕
   &.m_color_btn {
     @include range-width(0, 450px) {
@@ -42,6 +48,10 @@ button {
     width: auto;
     padding: 8px;
     margin-right: 15px;
+
+    @include range-width(770px, 1010px) {
+      margin-right: 10px;
+    }
   }
 
   &.wNotFull2 {

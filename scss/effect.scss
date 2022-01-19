@@ -12,7 +12,7 @@
   padding: 0 20px;
 
   @include range-width(1300px) {
-    bottom: 0;
+    bottom: -35px;
   }
 
   @include range-width(0, 770px) {
@@ -74,7 +74,7 @@
 .indexFT {
   display: inline-block;
   width: 100%;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   // margin-top: 80px;
   font-size: 1rem;
   background-color: #134b7b;
@@ -87,7 +87,7 @@
   background-repeat: repeat;
 
   @include range-width(1300px) {
-    bottom: -8%;
+    bottom: -13.5%;
   }
 
   @include range-width(770px, 850px) {

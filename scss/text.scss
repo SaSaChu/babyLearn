@@ -165,6 +165,7 @@ p {
   font-weight: bolder;
   font-size: 1.6rem;
   color: $color_orange;
+  vertical-align: middle;
 
   &:before {
     display: inline-block;
@@ -184,6 +185,7 @@ p {
   color: $color_orange;
   float: left;
   margin: 0 10px;
+  vertical-align: middle;
 
   &:after {
     display: inline-block;
@@ -227,6 +229,7 @@ p {
   font-size: 2.4rem;
   color: rgba(230, 75, 20, 1.00);
   margin-bottom: 10px;
+  vertical-align: middle;
 
   &.gover {
     font-size: 1.6rem;

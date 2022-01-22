@@ -53,11 +53,11 @@ p { padding: 0; margin: 0; }
   .text24:before { display: block !important; font-size: 1.4rem; } }
 .text24:before { display: inline-block; content: attr(title); color: #f6881c; margin-right: 5px; }
 
-.timeTotal { display: inline-block; float: right; font-weight: bolder; font-size: 1.6rem; color: #f6881c; }
+.timeTotal { display: inline-block; float: right; font-weight: bolder; font-size: 1.6rem; color: #f6881c; vertical-align: middle; }
 .timeTotal:before { display: inline-block; content: '本月學習時數：'; }
 .timeTotal:after { display: inline-block; content: '分鐘'; }
 
-.month { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #f6881c; float: left; margin: 0 10px; }
+.month { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #f6881c; float: left; margin: 0 10px; vertical-align: middle; }
 .month:after { display: inline-block; content: '月'; }
 
 .rVideoText { display: inline-block; font-size: 1.5rem; font-weight: bolder; color: #f6881c; float: left; line-height: 35px; }
@@ -65,7 +65,7 @@ p { padding: 0; margin: 0; }
 .number { display: inline-block; width: 30px; height: 30px; background-color: #e64b14; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; color: white; font-weight: bolder; font-size: 1.4rem; line-height: 30px; margin-bottom: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .number { width: 25px; height: 25px; font-size: 1.2rem; line-height: 25px; } }
 
-.gameTatle { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #e64b14; margin-bottom: 10px; }
+.gameTatle { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #e64b14; margin-bottom: 10px; vertical-align: middle; }
 .gameTatle.gover { font-size: 1.6rem; margin-bottom: 0; float: left; }
 .gameTatle.gover:after { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .gameTatle.gover { margin-top: 20px; margin-left: 7px; } }

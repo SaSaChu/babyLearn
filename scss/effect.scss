@@ -6,7 +6,8 @@
   display: inline-block;
   width: 100%;
   position: absolute;
-  bottom: -3%;
+  // bottom: -3%;
+  bottom: -4%;
   left: 0;
   z-index: 6666;
   padding: 0 20px;
@@ -15,7 +16,11 @@
     bottom: -35px;
   }
 
-  @include range-width(0, 770px) {
+  @include range-width(916px, 1025px) {
+    bottom: -9%;
+  }
+
+  @include range-width(0, 916px) {
     display: none;
   }
 
@@ -64,7 +69,7 @@
   //   bottom: -1%;
   // }
 
-  @include range-width(0, 770px) {
+  @include range-width(0, 916px) {
     // bottom: 7%;
     // height: 25px;
     display: none;
@@ -90,16 +95,26 @@
     bottom: -13.5%;
   }
 
+  @include range-width(916px, 1025px) {
+    bottom: -20%;
+  }
+
+  @include range-width(850px, 916px) {
+    padding: 17px 20px 20px 20px;
+  }
+
   @include range-width(770px, 850px) {
-    bottom: -18%;
+    padding: 17px 20px 20px 20px;
+    bottom: -10%;
   }
 
   @include range-width(450px, 770px) {
-    bottom: -8%;
+    padding: 17px 20px 20px 20px;
+    bottom: 0;
   }
 
   @include range-width(0, 450px) {
-    padding: 10px 0;
+    padding: 10px 5px;
     font-size: .8rem;
     bottom: -4%;
   }

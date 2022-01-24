@@ -54,8 +54,6 @@ p { padding: 0; margin: 0; }
 .text24:before { display: inline-block; content: attr(title); color: #f6881c; margin-right: 5px; }
 
 .timeTotal { display: inline-block; float: right; font-weight: bolder; font-size: 1.6rem; color: #f6881c; vertical-align: middle; }
-.timeTotal:before { display: inline-block; content: '本月學習時數：'; }
-.timeTotal:after { display: inline-block; content: '分鐘'; }
 
 .month { display: inline-block; font-weight: bolder; font-size: 2.4rem; color: #f6881c; float: left; margin: 0 10px; vertical-align: middle; }
 .month:after { display: inline-block; content: '月'; }

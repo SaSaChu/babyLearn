@@ -166,15 +166,15 @@ p {
   font-size: 1.6rem;
   color: $color_orange;
 
-  &:before {
-    display: inline-block;
-    content: '本月學習時數：';
-  }
+  // &:before {
+  //   display: inline-block;
+  //   content: '本月學習時數：';
+  // }
 
-  &:after {
-    display: inline-block;
-    content: '分鐘';
-  }
+  // &:after {
+  //   display: inline-block;
+  //   content: '分鐘';
+  // }
 }
 
 .month {
@@ -186,10 +186,10 @@ p {
   margin: 0 10px;
   vertical-align: middle;
 
-  &:after {
-    display: inline-block;
-    content: '月';
-  }
+  // &:after {
+  //   display: inline-block;
+  //   content: '月';
+  // }
 }
 
 .rVideoText {
@@ -235,9 +235,9 @@ p {
     margin-bottom: 0;
     float: left;
 
-    &:after {
-      display: none;
-    }
+    // &:after {
+    //   display: none;
+    // }
 
     @include range-width(0, 450px) {
       margin-top: 20px;
@@ -250,9 +250,9 @@ p {
     text-align: center;
     margin-top: -9px;
     
-    &:after {
-      display: none;
-    }
+    // &:after {
+    //   display: none;
+    // }
 
     @include range-width(0, 450px) {
       font-size: 2rem;
@@ -261,10 +261,10 @@ p {
     }
   }
 
-  &:after {
-    display: inline-block;
-    content: '分';
-  }
+  // &:after {
+  //   display: inline-block;
+  //   content: '分';
+  // }
 
   @include range-width(0, 450px) {
     float: left;

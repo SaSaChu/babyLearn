@@ -165,16 +165,13 @@ p {
   font-weight: bolder;
   font-size: 1.6rem;
   color: $color_orange;
-  vertical-align: middle !important;
 
   &:before {
-    vertical-align: middle !important;
     display: inline-block;
     content: '本月學習時數：';
   }
 
   &:after {
-    vertical-align: middle !important;
     display: inline-block;
     content: '分鐘';
   }

@@ -23,7 +23,7 @@
 
 .ibOut { display: inline-block; width: 100%; max-width: 1150px; padding-top: 20px; }
 @media screen and (max-width: 899px) and (min-width: 0) { .ibOut { display: none; } }
-.ibOut .ibanner { display: inline-block; width: calc(100% / 4 - 15px * 3 / 4); height: 120px; float: left; margin-right: 15px; border: 5px solid white; background-color: white; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.ibOut .ibanner { display: inline-block; width: calc(100% / 4 - 15px * 3 / 4); height: 100%; float: left; margin-right: 15px; border: 5px solid white; background-color: white; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 .ibOut .ibanner:last-child { margin-right: 0; }
 
 .indexFText { display: inline-block; width: 100%; max-width: 1150px; font-size: 1rem; color: white; padding: 20px 0; }

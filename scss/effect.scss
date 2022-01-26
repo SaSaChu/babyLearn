@@ -237,6 +237,14 @@
       // left: 0;
       // border: 1px solid rgba(255, 0, 0, .3);
 
+      @include range-width(840px, 916px) {
+        height: 85%;
+      }
+
+      @include range-width(0, 770px) {
+        height: 90%;
+      }
+
       .link00, .link01, .link02, .link03, .link04, .link05, .link06 {
         display: inline-block;
         position: absolute;
@@ -253,10 +261,16 @@
         top: 3%;
         left: 9%;
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 163px;
-        //   height: 99px
-        // }
+        @include range-width(665px, 700px) {
+          max-width: 38%;
+          height: 13%;
+          top: 3%;
+          left: 6%;
+        }
+
+        @include range-width(769px, 825px) {
+          height: 18%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 110px;
@@ -273,14 +287,9 @@
         bottom: 16%;
         left: 36%;
 
+        // 非會員
         &.already01 {
           left: 33%;
-          // @include range-width(450px, 770px) {
-          //   max-width: 180px;
-          //   height: 240px;
-          //   bottom: 21%;
-          //   left: 10%;
-          // }
 
           @include range-width(0, 450px) {
             max-width: 94px;
@@ -290,22 +299,31 @@
           }
         }
 
-        // @include range-width(770px, 1500px) {
-        //   max-width: 130px;
-        //   height: 184px;
-        // }
+        @include range-width(825px, 1181px) {
+          max-width: 11%;
+          height: 24%;
+          bottom: 13%;
+          left: 36%;
+        }
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 180px;
-        //   height: 240px;
-        //   bottom: 13%;
-        //   left: 51%;
-        // }
+        @include range-width(769px, 825px) {
+          max-width: 11%;
+          height: 22%;
+          bottom: 25%;
+          left: 37%;
+        }
+
+        @include range-width(665px, 700px) {
+          max-width: 19%;
+          height: 16%;
+          bottom: 11%;
+          left: 53%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 85px;
           height: 105px;
-          bottom: 15%;
+          bottom: 18%;
           left: 51%;
         }
       }
@@ -317,16 +335,23 @@
         bottom: 16%;
         left: 15%;
 
-        // @include range-width(770px, 1500px) {
-        //   max-width: 214px;
-        //   height: 237px;
-        // }
+        @include range-width(825px, 1181px) {
+          max-width: 18%;
+          height: 30%;
+          bottom: 12%;
+          left: 16%;
+        }
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 153px;
-        //   height: 165px;
-        //   bottom: 12%;
-        // }
+        @include range-width(769px, 825px) {
+          bottom: 22%;
+        }
+
+        @include range-width(665px, 700px) {
+          max-width: 35%;
+          height: 25%;
+          bottom: 16%;
+          left: 3%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 114px;
@@ -343,15 +368,21 @@
         top: 18%;
         left: 29%;
 
-        // @include range-width(770px, 1500px) {
-        //   max-width: 191px;
-        //   height: 276px;
-        // }
+        @include range-width(825px, 1181px) {
+          height: 33%;
+          top: 20%;
+        }
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 117px;
-        //   height: 155px;
-        // }
+        @include range-width(769px, 825px) {
+          height: 29%;
+        }
+
+        @include range-width(665px, 700px) {
+          max-width: 30%;
+          height: 25%;
+          top: 26%;
+          left: 7%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 109px;
@@ -368,15 +399,16 @@
         top: 5%;
         left: 44%;
 
-        // @include range-width(770px, 1500px) {
-        //   max-width: 137px;
-        //   height: 252px;
-        // }
+        @include range-width(769px, 825px) {
+          height: 29%;
+        }
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 95px;
-        //   height: 177px;
-        // }
+        @include range-width(665px, 700px) {
+          max-width: 23%;
+          height: 29%;
+          top: 15%;
+          left: 39%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 90px;
@@ -393,15 +425,21 @@
         top: 2%;
         right: 19%;
 
-        // @include range-width(770px, 1500px) {
-        //   max-width: 149px;
-        //   height: 245px;
-        // }
+        @include range-width(825px, 1181px) {
+          top: 5%;
+          right: 20%;
+        }
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 120px;
-        //   height: 212px;
-        // }
+        @include range-width(769px, 825px) {
+          height: 35%;
+        }
+
+        @include range-width(665px, 700px) {
+          max-width: 26%;
+          height: 29%;
+          top: 2%;
+          right: 9%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 103px;
@@ -418,20 +456,26 @@
         bottom: 13%;
         right: 18%;
 
-        // @include range-width(770px, 1500px) {
-        //   max-width: 179px;
-        //   height: 214px;
-        // }
+        @include range-width(825px, 1181px) {
+          bottom: 9%;
+        }
 
-        // @include range-width(450px, 770px) {
-        //   max-width: 128px;
-        //   height: 153px;
-        // }
+        @include range-width(769px, 825px) {
+          height: 28%;
+          bottom: 23%;
+        }
+
+        @include range-width(665px, 700px) {
+          max-width: 30%;
+          height: 27%;
+          bottom: 17%;
+          right: 2%;
+        }
 
         @include range-width(0, 450px) {
           max-width: 102px;
           height: 150px;
-          bottom: 23%;
+          bottom: 25%;
           right: 4%;
         }
       }

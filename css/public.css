@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+*, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 .bgWhite { background-color: white; }
 
@@ -143,11 +143,13 @@ footer { display: inline-block; width: 100%; padding: 20px; margin-top: 80px; fo
 
 .topBar { display: inline-block; width: 100%; min-height: 185px; padding: 0 50px; position: relative; }
 @media screen and (max-width: 449px) and (min-width: 0) { .topBar { min-height: auto; padding: 0; } }
+@media screen and (max-width: 769px) and (min-width: 450px) { .topBar { min-height: 110px; } }
+@media screen and (max-width: 1099px) and (min-width: 770px) { .topBar { min-height: 140px; } }
 .topBar .topL, .topBar .topR { display: inline-block; float: left; position: absolute; }
 .topBar .topL { width: 50%; top: 0; left: 50px; }
 .topBar .topL a { display: inline-block; width: 100%; max-width: 780px; float: left; }
 .topBar .topL a img { display: inline-block; width: 100%; max-width: 780px; float: left; }
-.topBar .topR { width: 50%; top: 20px; right: 50px; }
+.topBar .topR { width: 50%; right: 50px; bottom: 0; }
 .topBar .topR img { display: inline-block; width: 100%; max-width: 800px; float: right; }
 
 .hInputBox { display: inline-block; padding-top: 5px; }

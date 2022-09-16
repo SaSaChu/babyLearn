@@ -472,10 +472,20 @@ footer {
   padding: 0 50px;
   position: relative;
 
+
   @include range-width(0, 450px) {
     min-height: auto;
     padding: 0;
   }
+
+  @include range-width(450px, 770px) {
+    min-height: 110px;
+  }
+
+  @include range-width(770px, 1100px) {
+    min-height: 140px;
+  }
+
 
   .topL, .topR {
     display: inline-block;
@@ -504,8 +514,9 @@ footer {
 
   .topR {
     width: 50%;
-    top: 20px;
+    // top: 20px;
     right: 50px;
+    bottom: 0;
 
     img {
       display: inline-block;

@@ -46,10 +46,26 @@
 .qaBox {
 	display: inline-block;
 	width: 100%;
-	background-image: url(../img/qa/qa-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	// background-image: url(../img/qa/qa-bg.png);
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-position: center;
+
+	// background-image: url(../img/qa/bgl.png);
+	// background-repeat: repeat-y;
+	// background-position: left;
+	 background-image   : url(../img/qa/bgl.png),
+	 url(../img/qa/bgr.png),
+                       url(../img/qa/qa-bg.png);
+                       
+
+  background-repeat  : repeat-y,
+                       repeat-y,
+                       no-repeat;
+
+  background-position: left,
+                       right,
+                       center;
 }
 
 .qa-title {
@@ -98,8 +114,13 @@
 		background-repeat: repeat-y;
 	}
 
+	// .qaM {
+	// 	width: calc(100% - 20px * 2);
+	// 	padding: 2%;
+	// }
+
 	.qaM {
-		width: calc(100% - 20px * 2);
+		width: 100%;
 		padding: 2%;
 	}
 }

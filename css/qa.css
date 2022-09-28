@@ -30,7 +30,7 @@
 .img-hr { max-width: 150px; }
 @media screen and (max-width: 1024px) and (min-width: 770px) { .img-hr { max-width: 100px; } }
 
-.qaBox { display: inline-block; width: 100%; background-image: url(../img/qa/qa-bg.png); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.qaBox { display: inline-block; width: 100%; background-image: url(../img/qa/bgl.png), url(../img/qa/bgr.png), url(../img/qa/qa-bg.png); background-repeat: repeat-y, repeat-y, no-repeat; background-position: left, right, center; }
 
 .qa-title { color: #3463a6; margin-left: -18px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .qa-title { margin-top: 10px; margin-left: 0; font-size: 1.6rem !important; } }
@@ -45,6 +45,6 @@
 .qaC { display: inline-block; width: 100%; height: 100%; }
 .qaC .qaL, .qaC .qaR, .qaC .qaM { display: inline-block; float: left; }
 .qaC .qaL { width: 20px; background-image: url(../img/qa/bgl.png); background-repeat: repeat-y; }
-.qaC .qaM { width: calc(100% - 20px * 2); padding: 2%; }
+.qaC .qaM { width: 100%; padding: 2%; }
 
 .qaR { width: 20px; background-image: url(../img/qa/bgr.png); background-repeat: repeat-y; }

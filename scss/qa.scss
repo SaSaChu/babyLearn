@@ -11,6 +11,36 @@
 	}
 }
 
+.img-hl, .img-hr {
+	display: inline-block;
+	width: 100%;
+
+	@include range-width(0, 770px) {
+		display: none;
+	}
+}
+
+.img-qaf, .img-qah {
+	display: inline-block;
+	width: 100%;
+}
+
+.img-hl {
+	max-width: 550px;
+
+	@include range-width(770px, 1025px) {
+		max-width: 350px;
+	}
+}
+
+.img-hr {
+	max-width: 150px;
+
+	@include range-width(770px, 1025px) {
+		max-width: 100px;
+	}
+}
+
 
 
 .qaBox {

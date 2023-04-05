@@ -1,0 +1,100 @@
+@import "Ginkgo";
+@import "color";
+
+* {
+  &, &:after, &:before {
+    vertical-align: top;
+    @include box-sizing(border-box);
+    @include font-smoothing(subpixel-antialiased);
+  }
+}
+
+.indexFText {
+	&.growingFText {
+		padding: 50px 0 20px 0;
+
+    @include range-width(0, 800px) {
+      padding: 20px 0;
+    }
+	}
+}
+
+.bg_growing {
+	background-color: #ccefa8;
+}
+
+.n-footerboxs {
+  &.growing-footer {
+  	bottom: -50px;
+  }
+}
+
+
+.indexBoxs {
+  
+  .lightBox {
+
+    &.in-growing {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      min-height: 1000px;
+      background-image: url(../img/growing/index-growing-bg.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center top;
+      background-size: contain;
+
+      @include range-width(0, 450px) {background-size: cover;}
+    }
+  }
+
+  .imgBox {
+
+    .link05-g {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+
+        // background-color: rgba(255, 0, 0, 0.2);
+      } 
+
+      // 活動區
+      .link05-g {
+        max-width: 15%;
+        height: 45%;
+        top: 2%;
+        right: 19%;
+
+        @include range-width(825px, 1181px) {
+          top: 5%;
+          right: 20%;
+        }
+
+        @include range-width(769px, 825px) {
+          height: 35%;
+        }
+
+        @include range-width(665px, 700px) {
+          max-width: 26%;
+          height: 29%;
+          top: 20%;
+          right: 0;
+        }
+
+        @include range-width(0, 450px) {
+          max-width: 90px;
+          height: 206px;
+          top: 18%;
+          right: 0;
+        }
+      }
+
+    }
+
+}
+
+
+
+    

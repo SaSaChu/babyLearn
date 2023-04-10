@@ -20,7 +20,7 @@
 }
 
 .bg_growing {
-	background-color: #ccefa8;
+	background-color: #ffcbcf;
 }
 
 .n-footerboxs {
@@ -39,11 +39,22 @@
       width: 100%;
       height: 100%;
       min-height: 1000px;
+      background-image: url(../img/growing/index-growing-bg2.png);
+      background-repeat: repeat-x;
+      background-attachment: fixed;
+      background-size: auto;
+    }
+
+    .grow-bg {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      min-height: 1000px;
       background-image: url(../img/growing/index-growing-bg.png);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center top;
-      background-size: contain;
+      background-size: auto;
 
       @include range-width(0, 450px) {background-size: cover;}
     }

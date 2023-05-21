@@ -21,12 +21,19 @@
 .indexFText.growingFText { padding: 50px 0 20px 0; }
 @media screen and (max-width: 799px) and (min-width: 0) { .indexFText.growingFText { padding: 20px 0; } }
 
-.bg_growing { background-color: #ffcbcf; }
+.bg_growing { background-color: #064b82; }
 
 .n-footerboxs.growing-footer { bottom: -50px; }
 
-.indexBoxs .lightBox.in-growing { display: inline-block; width: 100%; height: 100%; min-height: 1000px; background-image: url(../img/growing/index-growing-bg2.png); background-repeat: repeat-x; background-attachment: fixed; background-size: auto; }
-.indexBoxs .lightBox .grow-bg { display: inline-block; width: 100%; height: 100%; min-height: 1000px; background-image: url(../img/growing/index-growing-bg.png); background-repeat: no-repeat; background-attachment: fixed; background-position: center top; background-size: auto; }
+.n-footerboxs { display: inline-block; width: 100%; position: absolute; bottom: -24%; left: 0; z-index: 6666; padding: 0 15px; background-repeat: repeat-x; background-position: left bottom; background-image: url(../img/index/wave03.svg); }
+.n-footerboxs.growing-wave { background-image: url(../img/growing/wave04.svg); }
+.n-footerboxs.nom { bottom: -19%; }
+@media screen and (max-width: 1024px) and (min-width: 916px) { .n-footerboxs.nom { bottom: -22%; } }
+@media screen and (max-width: 915px) and (min-width: 0) { .n-footerboxs { background-image: none; position: unset; background-color: #134b7b; } }
+
+.indexBoxs .lightBox.in-growing { display: inline-block; width: 100%; height: 100%; min-height: 765px; background-image: url(../img/growing/index-growing-bg2.png); background-repeat: repeat-x; background-attachment: fixed; background-size: auto; }
+@media screen and (max-width: 449px) and (min-width: 0) { .indexBoxs .lightBox.in-growing { display: none !important; } }
+.indexBoxs .lightBox .grow-bg { display: inline-block; width: 100%; height: 100%; min-height: 765px; background-image: url(../img/growing/index-growing-bg.png); background-repeat: no-repeat; background-attachment: fixed; background-position: center top; background-size: auto; }
 @media screen and (max-width: 449px) and (min-width: 0) { .indexBoxs .lightBox .grow-bg { background-size: cover; } }
 .indexBoxs .imgBox .link05-g { display: inline-block; position: absolute; cursor: pointer; width: 100%; }
 .indexBoxs .imgBox .link05-g { max-width: 15%; height: 45%; top: 2%; right: 19%; }

@@ -45,6 +45,10 @@
 
   &.growing-wave {
     background-image: url(../img/growing/wave04.svg);
+
+    @include range-width(0, 450px) {
+      background-image: none;
+    }
   }
 
   &.nom {

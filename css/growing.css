@@ -27,6 +27,7 @@
 
 .n-footerboxs { display: inline-block; width: 100%; position: absolute; bottom: -24%; left: 0; z-index: 6666; padding: 0 15px; background-repeat: repeat-x; background-position: left bottom; background-image: url(../img/index/wave03.svg); }
 .n-footerboxs.growing-wave { background-image: url(../img/growing/wave04.svg); }
+@media screen and (max-width: 449px) and (min-width: 0) { .n-footerboxs.growing-wave { background-image: none; } }
 .n-footerboxs.nom { bottom: -19%; }
 @media screen and (max-width: 1024px) and (min-width: 916px) { .n-footerboxs.nom { bottom: -22%; } }
 @media screen and (max-width: 915px) and (min-width: 0) { .n-footerboxs { background-image: none; position: unset; background-color: #134b7b; } }
